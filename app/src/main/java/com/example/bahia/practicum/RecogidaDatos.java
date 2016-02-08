@@ -16,8 +16,8 @@ public class RecogidaDatos extends AppCompatActivity {
     }
 
     private void siguienteLayout() {
-        Button siguiente = (Button) findViewById(R.id.siguiente_btn);
-        siguiente.setOnClickListener(new View.OnClickListener() {
+        Button continuar = (Button) findViewById(R.id.siguiente_btn);
+        continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RecogidaDatos.this, RecogidaDatos2.class));
