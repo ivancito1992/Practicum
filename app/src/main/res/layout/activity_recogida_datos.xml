@@ -344,56 +344,13 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="25dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pregunta6"
-            android:id="@+id/textView9" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" >
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn1"
-                android:id="@+id/radioButton16"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn2"
-                android:id="@+id/radioButton17"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn3"
-                android:id="@+id/radioButton18"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-        </LinearLayout>
-
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView" />
+            android:text="@string/btnSiguiente"
+            android:id="@+id/siguiente_btn" />
 
     </LinearLayout>
 
