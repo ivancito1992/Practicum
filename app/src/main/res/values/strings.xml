@@ -33,5 +33,8 @@
     <string name="radiobtn1">Mucho</string>
     <string name="radiobtn2">Poco</string>
     <string name="radiobtn3">Nada</string>
+    <string name="radiobtnSi">SI</string>
+    <string name="radiobtnNo">NO</string>
     <string name="btnSiguiente">Guardar y continuar</string>
+    <string name="btnFinalizar">Guardar y finalizar</string>
 </resources>
