@@ -3,14 +3,14 @@
     <string name="nombrePersona">Nombre Azafata</string>
     <string name="nombreCentro">Nombre Centro</string>
     <string name="diaDeRecogida">Dia de Recogida de los datos</string>
-    <string name="numeroBotellas">Numero de botellas usadas</string>
+    <string name="numeroBotellas">Numero de botellas consumidas</string>
 
     <string name="titulo1">Datos Generales</string>
     <string name="titulo2">Concepto</string>
     <string name="titulo3">Datos de Interés</string>
     <string name="titulo4">Centro / Acción</string>
 
-    <string name="pregunta1">Tipo de botella consumidas</string>
+    <string name="pregunta1">Tipo de zumo consumido</string>
     <string name="pregunta2">¿Ha gustado el sabor del zumo?</string>
     <string name="pregunta3">¿Ha gustado el envase / formato del zumo?</string>
     <string name="pregunta4">¿El cliente aprecia la desgustación?</string>
@@ -27,9 +27,11 @@
     <string name="preguntaSiNo2">¿Te han facilitado los productos sin problema?</string>
     <string name="preguntaSiNo3">¿Te ha resultado facil colocar los elementos promocionales?</string>
 
-    <string name="radiobotella1">1 Litro</string>
-    <string name="radiobotella2">850 Mililitros</string>
-    <string name="radiobotella3">750 Mililitros</string>
+    <string name="radiobotella1">Clasico</string>
+    <string name="radiobotella2">Antioxidante</string>
+    <string name="radiobotella3">Organico</string>
+    <string name="radiobotella4">Prisma</string>
+    <string name="radiobotella5">Veggies</string>
     <string name="radiobtn1">Mucho</string>
     <string name="radiobtn2">Poco</string>
     <string name="radiobtn3">Nada</string>

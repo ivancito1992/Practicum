@@ -111,21 +111,35 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella1"
                 android:id="@+id/radioButton"
-                android:paddingEnd="45dp" />
+                android:paddingEnd="15dp" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella2"
                 android:id="@+id/radioButton2"
-                android:paddingEnd="45dp" />
+                android:paddingEnd="15dp" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella3"
                 android:id="@+id/radioButton3"
-                android:paddingEnd="45dp" />
+                android:paddingEnd="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobotella4"
+                android:id="@+id/radioButton15"
+                android:paddingEnd="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobotella5"
+                android:id="@+id/radioButton42"
+                android:paddingEnd="15dp" />
         </LinearLayout>
 
         <Space
@@ -306,6 +320,8 @@
         android:layout_height="wrap_content"
         android:text="@string/btnSiguiente"
         android:id="@+id/siguiente_btn"
+        android:background="@drawable/botones_accion"
+        android:textColor="#ffffff"
         android:layout_gravity="center"
         android:layout_alignBottom="@+id/linearLayout2"
         android:layout_centerHorizontal="true" />

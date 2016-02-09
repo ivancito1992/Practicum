@@ -154,6 +154,7 @@
         android:text="@string/btnFinalizar"
         android:id="@+id/button"
         android:background="@drawable/botones_accion"
+        android:textColor="#ffffff"
         android:layout_gravity="center|bottom"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

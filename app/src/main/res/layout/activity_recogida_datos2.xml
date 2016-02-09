@@ -418,6 +418,8 @@
         android:layout_height="wrap_content"
         android:text="@string/btnSiguiente"
         android:id="@+id/siguiente_btn2"
+        android:background="@drawable/botones_accion"
+        android:textColor="#ffffff"
         android:layout_gravity="center|bottom"
         android:layout_alignBottom="@+id/linearLayout"
         android:layout_centerHorizontal="true" />
