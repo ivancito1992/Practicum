@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- ESTILO DE LAS LETRAS -->
+    <style name="Letras">
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
 </resources>
