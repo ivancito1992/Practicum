@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="@string/titulo1"
             android:id="@+id/textView"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -39,8 +39,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="@string/nombrePersona"
-                android:ems="10"
-                android:id="@+id/editText" />
+                android:ems="5"
+                android:id="@+id/editText"
+                android:textSize="12sp" />
 
             <Space
                 android:layout_width="0dp"
@@ -52,14 +53,16 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="@string/nombreCentro"
-                android:ems="10"
-                android:id="@+id/editText2" />
+                android:ems="5"
+                android:id="@+id/editText2"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="15dp"
+            android:layout_weight="0.20" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -72,20 +75,22 @@
                 android:layout_height="wrap_content"
                 android:text="@string/diaDeRecogida"
                 android:id="@+id/editText3"
-                android:inputType="date" />
+                android:inputType="date"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="15dp"
+            android:layout_weight="0.20" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/titulo2"
-            style="@style/Letras"
             android:id="@+id/textView2"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
+            <!-- style="@style/Letras" -->
 
         <Space
             android:layout_width="match_parent"
@@ -128,6 +133,14 @@
                 android:id="@+id/radioButton3"
                 android:paddingEnd="15dp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -153,162 +166,8 @@
             android:inputType="number"
             android:text="@string/numeroBotellas"
             android:ems="10"
-            android:id="@+id/editText4" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/titulo3"
-            android:id="@+id/textView4"
-            android:textSize="28sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pregunta2"
-            android:id="@+id/textView5" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" >
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn1"
-                android:id="@+id/radioButton4"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn2"
-                android:id="@+id/radioButton5"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn3"
-                android:id="@+id/radioButton6"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-        </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pregunta3"
-            android:id="@+id/textView6" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" >
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn1"
-                android:id="@+id/radioButton7"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn2"
-                android:id="@+id/radioButton8"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn3"
-                android:id="@+id/radioButton9"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-        </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pregunta4"
-            android:id="@+id/textView7" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center" >
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn1"
-                android:id="@+id/radioButton10"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn2"
-                android:id="@+id/radioButton11"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn3"
-                android:id="@+id/radioButton12"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingEnd="45dp" />
-        </LinearLayout>
+            android:id="@+id/editText4"
+            android:textSize="12sp" />
 
         <Space
             android:layout_width="match_parent"
