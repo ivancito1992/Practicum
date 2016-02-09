@@ -39,4 +39,5 @@
     <string name="radiobtnNo">NO</string>
     <string name="btnSiguiente">Guardar y continuar</string>
     <string name="btnFinalizar">Guardar y finalizar</string>
+    <string name="btnPrueba">&gt;</string>
 </resources>

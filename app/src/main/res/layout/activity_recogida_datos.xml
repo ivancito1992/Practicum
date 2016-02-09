@@ -319,7 +319,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btnSiguiente"
+        android:text="@string/btnPrueba"
         android:id="@+id/siguiente_btn"
         android:background="@drawable/botones_accion"
         android:textColor="#ffffff"
