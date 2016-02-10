@@ -41,29 +41,11 @@
             android:layout_height="wrap_content"
             android:gravity="center" >
 
-            <RadioButton
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radiobtn1"
-                android:id="@+id/radioButton7"
-                android:paddingEnd="25dp"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn2"
-                android:id="@+id/radioButton8"
-                android:paddingEnd="25dp"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radiobtn3"
-                android:id="@+id/radioButton9"
-                android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:id="@+id/spinnerPrueba"
+                android:gravity="center" />
         </LinearLayout>
 
         <Space
@@ -80,11 +62,11 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" >
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -109,7 +91,7 @@
                 android:id="@+id/radioButton47"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -125,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -154,7 +136,7 @@
                 android:id="@+id/radioButton6"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -171,7 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -200,7 +182,7 @@
                 android:id="@+id/radioButton36"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
-        </LinearLayout>
+        </RadioGroup>
     </LinearLayout>
 
     <Button

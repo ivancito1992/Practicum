@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 android:id="@+id/radioButton30"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 android:id="@+id/radioButton27"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -125,7 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                 android:id="@+id/radioButton33"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"

@@ -23,10 +23,6 @@
             android:id="@+id/textView"
             android:textSize="25sp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -58,10 +54,6 @@
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="13dp" />
-
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -76,10 +68,6 @@
                 android:inputType="date"
                 android:textSize="12sp" />
         </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="13dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -103,11 +91,11 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <RadioGroup
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="left">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -133,14 +121,6 @@
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -156,6 +136,15 @@
                 android:id="@+id/radioButton42"
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
         </LinearLayout>
 
         <Space
@@ -170,10 +159,6 @@
             android:ems="10"
             android:id="@+id/editText4"
             android:textSize="12sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
 
     </LinearLayout>
 

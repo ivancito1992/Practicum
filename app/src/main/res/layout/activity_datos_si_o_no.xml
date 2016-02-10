@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -113,7 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
+        <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,15 +135,16 @@
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
-        </LinearLayout>
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="15dp"
+            android:layout_weight="0.07" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:text="@string/tituloFinal"
             android:textSize="30sp"
             android:id="@+id/textView22"
