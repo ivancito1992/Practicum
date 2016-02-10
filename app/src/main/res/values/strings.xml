@@ -38,6 +38,7 @@
     <string name="radiobtn3">Nada</string>
     <string name="radiobtnSi">SI</string>
     <string name="radiobtnNo">NO</string>
+    <string name="btnIniciar">Comenzar</string>
     <string name="btnFinalizar">Guardar y finalizar</string>
     <string name="btnSiguiente">-></string>
 </resources>
