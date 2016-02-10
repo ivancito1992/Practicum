@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.bahia.practicum.RecogidaDatos">
+    tools:context=".RecogidaDatosGenerales">
 
     <LinearLayout
         android:orientation="vertical"
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="@string/titulo1"
             android:id="@+id/textView"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -39,21 +39,20 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="@string/nombrePersona"
-                android:ems="5"
+                android:ems="9"
                 android:id="@+id/editText"
                 android:textSize="12sp" />
 
             <Space
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="0.97" />
+                android:layout_width="70dp"
+                android:layout_height="40dp" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="@string/nombreCentro"
-                android:ems="5"
+                android:ems="9"
                 android:id="@+id/editText2"
                 android:textSize="12sp" />
 
@@ -61,8 +60,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:layout_weight="0.20" />
+            android:layout_height="13dp" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -81,15 +79,14 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:layout_weight="0.20" />
+            android:layout_height="13dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/titulo2"
             android:id="@+id/textView2"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
             <!-- style="@style/Letras" -->
 
         <Space
@@ -117,21 +114,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella1"
                 android:id="@+id/radioButton"
-                android:paddingEnd="15dp" />
+                android:paddingEnd="15dp"
+                android:textSize="12sp" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella2"
                 android:id="@+id/radioButton2"
-                android:paddingEnd="15dp" />
+                android:paddingEnd="15dp"
+                android:textSize="12sp" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella3"
                 android:id="@+id/radioButton3"
-                android:paddingEnd="15dp" />
+                android:paddingEnd="15dp"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -146,14 +146,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella4"
                 android:id="@+id/radioButton15"
-                android:paddingEnd="15dp" />
+                android:paddingEnd="15dp"
+                android:textSize="12sp" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella5"
                 android:id="@+id/radioButton42"
-                android:paddingEnd="15dp" />
+                android:paddingEnd="15dp"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <Space
@@ -178,10 +180,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btnPrueba"
-        android:id="@+id/siguiente_btn"
+        android:text="@string/btnSiguiente"
+        android:id="@+id/continuar1"
         android:background="@drawable/botones_accion"
         android:textColor="#ffffff"
+        android:textSize="30sp"
         android:layout_gravity="center"
         android:layout_alignBottom="@+id/linearLayout2"
         android:layout_centerHorizontal="true" />

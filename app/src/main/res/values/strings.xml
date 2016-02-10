@@ -9,6 +9,7 @@
     <string name="titulo2">Concepto</string>
     <string name="titulo3">Datos de Interés</string>
     <string name="titulo4">Centro / Acción</string>
+    <string name="tituloFinal">Gracias por su atencion</string>
 
     <string name="pregunta1">Tipo de zumo consumido</string>
     <string name="pregunta2">¿Ha gustado el sabor del zumo?</string>
@@ -16,7 +17,7 @@
     <string name="pregunta4">¿El cliente aprecia la desgustación?</string>
     <string name="pregunta5">¿El sabor resulta natural?</string>
     <string name="pregunta6">¿Ha gustado la mezcla de sabores?</string>
-    <string name="pregunta7">¿La mezcla de zanahoria sigue siendo la que menos gusta?</string>
+    <string name="pregunta7">¿La mezcla de zanahoria es la que menos gusta?</string>
     <string name="pregunta8">¿Los sabores Kiwi y Naranja resultan acidos?</string>
     <string name="pregunta9">¿El precio resulta elevado?</string>
     <string name="pregunta10">¿Aprecia que no tenga azucares añadidos?</string>
@@ -37,7 +38,6 @@
     <string name="radiobtn3">Nada</string>
     <string name="radiobtnSi">SI</string>
     <string name="radiobtnNo">NO</string>
-    <string name="btnSiguiente">Guardar y continuar</string>
     <string name="btnFinalizar">Guardar y finalizar</string>
-    <string name="btnPrueba">&gt;</string>
+    <string name="btnSiguiente">-></string>
 </resources>
