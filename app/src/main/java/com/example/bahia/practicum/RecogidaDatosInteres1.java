@@ -4,22 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
 
 public class RecogidaDatosInteres1 extends AppCompatActivity {
-    Spinner lista;
-    String[] datos = {"Opciones","Mucho","Poco","Nada"};
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos_interes1);
-
-        lista = (Spinner)findViewById(R.id.spinnerPrueba);
-        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,datos);
-        lista.setAdapter(adaptador);
 
         siguienteLayout();
     }

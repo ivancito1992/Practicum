@@ -28,25 +28,43 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pregunta2"
+            android:text="@string/pregunta1"
             android:id="@+id/textView4" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center" >
 
-            <Spinner
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinnerPrueba"
-                android:gravity="center" />
-        </LinearLayout>
+                android:text="@string/radiobtn1"
+                android:id="@+id/rbP1Mucho"
+                android:paddingEnd="25dp"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobtn2"
+                android:id="@+id/rbP1Poco"
+                android:paddingEnd="25dp"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobtn3"
+                android:id="@+id/rbP1Nada"
+                android:paddingEnd="25dp"
+                android:textSize="12sp" />
+        </RadioGroup>
 
         <Space
             android:layout_width="match_parent"
@@ -55,7 +73,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pregunta3"
+            android:text="@string/pregunta2"
             android:id="@+id/textView6" />
 
         <Space
@@ -72,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn1"
-                android:id="@+id/radioButton45"
+                android:id="@+id/rbP2Mucho"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
 
@@ -80,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn2"
-                android:id="@+id/radioButton46"
+                android:id="@+id/rbP2Poco"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
 
@@ -88,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn3"
-                android:id="@+id/radioButton47"
+                android:id="@+id/rbP2Nada"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
         </RadioGroup>
@@ -100,7 +118,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pregunta4"
+            android:text="@string/pregunta3"
             android:id="@+id/textView7" />
 
         <Space
@@ -117,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn1"
-                android:id="@+id/radioButton4"
+                android:id="@+id/rbP3Mucho"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
 
@@ -125,7 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn2"
-                android:id="@+id/radioButton5"
+                android:id="@+id/rbP3Poco"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
 
@@ -133,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn3"
-                android:id="@+id/radioButton6"
+                android:id="@+id/rbP3Nada"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
         </RadioGroup>
@@ -146,7 +164,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pregunta5"
+            android:text="@string/pregunta4"
             android:id="@+id/textView16" />
 
         <Space
@@ -163,7 +181,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn1"
-                android:id="@+id/radioButton34"
+                android:id="@+id/rbP4Mucho"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
 
@@ -171,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn2"
-                android:id="@+id/radioButton35"
+                android:id="@+id/rbP4Poco"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
 
@@ -179,7 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtn3"
-                android:id="@+id/radioButton36"
+                android:id="@+id/rbP4Nada"
                 android:paddingEnd="25dp"
                 android:textSize="12sp" />
         </RadioGroup>

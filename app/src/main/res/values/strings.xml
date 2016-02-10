@@ -4,6 +4,7 @@
     <string name="nombreCentro">Centro</string>
     <string name="diaDeRecogida">Dia de Recogida de los datos</string>
     <string name="numeroBotellas">Numero de botellas consumidas</string>
+    <string name="tipoZumo">Tipo de zumo consumido</string>
 
     <string name="titulo1">Datos Generales</string>
     <string name="titulo2">Concepto</string>
@@ -11,18 +12,17 @@
     <string name="titulo4">Centro / Acción</string>
     <string name="tituloFinal">Gracias por su atencion</string>
 
-    <string name="pregunta1">Tipo de zumo consumido</string>
-    <string name="pregunta2">¿Ha gustado el sabor del zumo?</string>
-    <string name="pregunta3">¿Ha gustado el envase / formato del zumo?</string>
-    <string name="pregunta4">¿El cliente aprecia la desgustación?</string>
-    <string name="pregunta5">¿El sabor resulta natural?</string>
-    <string name="pregunta6">¿Ha gustado la mezcla de sabores?</string>
-    <string name="pregunta7">¿La mezcla de zanahoria es la que menos gusta?</string>
-    <string name="pregunta8">¿Los sabores Kiwi y Naranja resultan acidos?</string>
-    <string name="pregunta9">¿El precio resulta elevado?</string>
-    <string name="pregunta10">¿Aprecia que no tenga azucares añadidos?</string>
-    <string name="pregunta11">¿El producto gustaria mas si estuviera refrigerado?</string>
-    <string name="pregunta12">¿La naranja sigue siendo mas predominante en la mezcla de sabores?</string>
+    <string name="pregunta1">¿Ha gustado el sabor del zumo?</string>
+    <string name="pregunta2">¿Ha gustado el envase / formato del zumo?</string>
+    <string name="pregunta3">¿El cliente aprecia la desgustación?</string>
+    <string name="pregunta4">¿El sabor resulta natural?</string>
+    <string name="pregunta5">¿Ha gustado la mezcla de sabores?</string>
+    <string name="pregunta6">¿La mezcla de zanahoria es la que menos gusta?</string>
+    <string name="pregunta7">¿Los sabores Kiwi y Naranja resultan acidos?</string>
+    <string name="pregunta8">¿El precio resulta elevado?</string>
+    <string name="pregunta9">¿Aprecia que no tenga azucares añadidos?</string>
+    <string name="pregunta10">¿El producto gustaria mas si estuviera refrigerado?</string>
+    <string name="pregunta11">¿La naranja sigue siendo mas predominante en la mezcla de sabores?</string>
 
     <string name="preguntaSiNo1">¿Ha tenido facilidad por parte del centro para realizar la acción?</string>
     <string name="preguntaSiNo2">¿Te han facilitado los productos sin problema?</string>

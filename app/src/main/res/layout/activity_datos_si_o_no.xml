@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtnSi"
-                android:id="@+id/radioButton13"
+                android:id="@+id/rbSI1"
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtnNo"
-                android:id="@+id/radioButton14"
+                android:id="@+id/rbNO1"
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
@@ -85,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtnSi"
-                android:id="@+id/radioButton40"
+                android:id="@+id/rbSI2"
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
@@ -93,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtnNo"
-                android:id="@+id/radioButton41"
+                android:id="@+id/rbNO2"
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
@@ -123,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtnSi"
-                android:id="@+id/radioButton43"
+                android:id="@+id/rbSI3"
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobtnNo"
-                android:id="@+id/radioButton44"
+                android:id="@+id/rbNO3"
                 android:paddingEnd="35dp"
                 android:textSize="12sp" />
 
@@ -139,8 +139,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:layout_weight="0.07" />
+            android:layout_height="15dp" />
 
         <TextView
             android:layout_width="match_parent"

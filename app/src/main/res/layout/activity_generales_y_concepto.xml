@@ -84,7 +84,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pregunta1"
+            android:text="@string/tipoZumo"
             android:id="@+id/textView3" />
 
         <Space
@@ -101,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella1"
-                android:id="@+id/radioButton"
+                android:id="@+id/rbClasico"
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
 
@@ -109,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella2"
-                android:id="@+id/radioButton2"
+                android:id="@+id/rbAntiox"
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
 
@@ -117,7 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella3"
-                android:id="@+id/radioButton3"
+                android:id="@+id/rbOrganico"
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
 
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella4"
-                android:id="@+id/radioButton15"
+                android:id="@+id/rbPrisma"
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
 
@@ -133,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radiobotella5"
-                android:id="@+id/radioButton42"
+                android:id="@+id/rbVeggies"
                 android:paddingEnd="15dp"
                 android:textSize="12sp" />
 
