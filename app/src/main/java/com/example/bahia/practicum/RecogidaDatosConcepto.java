@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class RecogidaDatosSiNo extends AppCompatActivity {
+public class RecogidaDatosConcepto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datos_si_o_no);
+        setContentView(R.layout.activity_datos_concepto);
         siguienteLayout();
     }
 
@@ -19,7 +19,7 @@ public class RecogidaDatosSiNo extends AppCompatActivity {
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RecogidaDatosSiNo.this, RecogidaDatosFinalizar.class));
+                startActivity(new Intent(RecogidaDatosConcepto.this, RecogidaDatosInteres1.class));
             }
         });
     }

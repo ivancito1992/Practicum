@@ -5,6 +5,7 @@
     <string name="diaDeRecogida">Dia de Recogida de los datos</string>
     <string name="numeroBotellas">Numero de botellas consumidas</string>
     <string name="tipoZumo">Tipo de zumo consumido</string>
+    <string name="contador">0</string>
 
     <string name="titulo1">Datos Generales</string>
     <string name="titulo2">Concepto</string>
@@ -28,17 +29,21 @@
     <string name="preguntaSiNo2">¿Te han facilitado los productos sin problema?</string>
     <string name="preguntaSiNo3">¿Te ha resultado facil colocar los elementos promocionales?</string>
 
-    <string name="radiobotella1">Clasico</string>
-    <string name="radiobotella2">Antioxidante</string>
-    <string name="radiobotella3">Organico</string>
-    <string name="radiobotella4">Prisma</string>
-    <string name="radiobotella5">Veggies</string>
+    <string name="zumoClasico">Clasico</string>
+    <string name="zumoAntioxidante">Antioxidante</string>
+    <string name="zumoOrganico">Organico</string>
+    <string name="zumoPrisma">Prisma</string>
+    <string name="zumoVeggies">Veggies</string>
+    <string name="otrosZumos">Otros zumos</string>
+
     <string name="radiobtn1">Mucho</string>
     <string name="radiobtn2">Poco</string>
     <string name="radiobtn3">Nada</string>
     <string name="radiobtnSi">SI</string>
     <string name="radiobtnNo">NO</string>
+
     <string name="btnIniciar">Comenzar</string>
     <string name="btnFinalizar">Guardar y finalizar</string>
     <string name="btnSiguiente">-></string>
+    <string name="btnAñadirBotella">+</string>
 </resources>

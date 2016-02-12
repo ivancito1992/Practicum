@@ -11,7 +11,7 @@ public class RecogidaDatosGenerales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_generales_y_concepto);
+        setContentView(R.layout.activity_generales_mas_si_o_no);
         siguienteLayout();
     }
 

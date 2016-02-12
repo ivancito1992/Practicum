@@ -19,7 +19,7 @@ public class RecogidaDatosInteres3 extends AppCompatActivity {
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RecogidaDatosInteres3.this, RecogidaDatosSiNo.class));
+                startActivity(new Intent(RecogidaDatosInteres3.this, RecogidaDatosFinalizar.class));
             }
         });
     }

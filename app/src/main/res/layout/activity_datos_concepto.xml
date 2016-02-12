@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RecogidaDatosConcepto"
+    android:background="@drawable/textura">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout3"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo2"
+            android:id="@+id/textView8"
+            style="@style/LetrasTitulo" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipoZumo"
+            android:id="@+id/textView18"
+            style="@style/LetrasSubtitulo"
+            android:paddingEnd="5dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoVeggies"
+                android:id="@+id/rbVeggies"
+                android:paddingEnd="35dp"
+                style="@style/LetrasOtros"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otrosZumos"
+                android:id="@+id/rbOtrosZumos"
+                android:paddingEnd="35dp"
+                style="@style/LetrasOtros"/>
+
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numeroBotellas"
+            android:id="@+id/textView19"
+            style="@style/LetrasSubtitulo"
+            android:paddingEnd="5dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoClasico"
+                android:id="@+id/textView20"
+                android:layout_marginLeft="15dp"
+                style="@style/LetrasOtros"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button"
+                android:background="@drawable/botones_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView22"
+                android:layout_marginLeft="5dp"
+                style="@style/Numeros" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoAntioxidante"
+                android:id="@+id/textView25"
+                android:layout_marginLeft="15dp"
+                style="@style/LetrasOtros"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button2"
+                android:background="@drawable/botones_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView26"
+                android:layout_marginLeft="5dp"
+                style="@style/Numeros" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoOrganico"
+                android:id="@+id/textView27"
+                android:layout_marginLeft="15dp"
+                style="@style/LetrasOtros"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button3"
+                android:background="@drawable/botones_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView28"
+                android:layout_marginLeft="5dp"
+                style="@style/Numeros" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoPrisma"
+                android:id="@+id/textView29"
+                android:layout_marginLeft="15dp"
+                style="@style/LetrasOtros"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button4"
+                android:background="@drawable/botones_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView30"
+                android:layout_marginLeft="5dp"
+                style="@style/Numeros" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoVeggies"
+                android:id="@+id/textView31"
+                android:layout_marginLeft="15dp"
+                style="@style/LetrasOtros"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button5"
+                android:background="@drawable/botones_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView32"
+                android:layout_marginLeft="5dp"
+                style="@style/Numeros" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSiguiente"
+        android:id="@+id/continuar5"
+        android:background="@drawable/botones_accion"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

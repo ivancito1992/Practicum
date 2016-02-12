@@ -9,9 +9,27 @@
     </style>
 
     <!-- ESTILO DE LAS LETRAS -->
-    <style name="Letras">
+    <style name="LetrasTitulo">
         <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
+    <style name="LetrasSubtitulo">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="LetrasOtros">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Numeros">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

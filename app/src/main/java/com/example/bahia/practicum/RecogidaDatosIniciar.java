@@ -27,7 +27,7 @@ public class RecogidaDatosIniciar extends AppCompatActivity {
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RecogidaDatosIniciar.this, RecogidaDatosInteres1.class));
+                startActivity(new Intent(RecogidaDatosIniciar.this, RecogidaDatosConcepto.class));
             }
         });
     }
