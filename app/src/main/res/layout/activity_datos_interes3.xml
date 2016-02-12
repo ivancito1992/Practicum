@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".RecogidaDatosInteres3">
+    tools:context=".RecogidaDatosInteres3"
+    android:background="@drawable/textura">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,7 +20,9 @@
             android:layout_height="wrap_content"
             android:text="@string/titulo3"
             android:id="@+id/textView14"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            style="@style/Letras"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -29,7 +32,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pregunta9"
-            android:id="@+id/textView13" />
+            android:id="@+id/textView13"
+            style="@style/Letras"
+            android:textStyle="italic" />
 
         <Space
             android:layout_width="match_parent"
@@ -47,7 +52,8 @@
                 android:text="@string/radiobtn1"
                 android:id="@+id/rbP9Mucho"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -55,7 +61,8 @@
                 android:text="@string/radiobtn2"
                 android:id="@+id/rbP9Poco"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -63,7 +70,8 @@
                 android:text="@string/radiobtn3"
                 android:id="@+id/rbP9Nada"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
         </RadioGroup>
 
         <Space
@@ -74,7 +82,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pregunta10"
-            android:id="@+id/textView15" />
+            android:id="@+id/textView15"
+            style="@style/Letras"
+            android:textStyle="italic" />
 
         <Space
             android:layout_width="match_parent"
@@ -92,7 +102,8 @@
                 android:text="@string/radiobtn1"
                 android:id="@+id/rbP10Mucho"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -100,7 +111,8 @@
                 android:text="@string/radiobtn2"
                 android:id="@+id/rbP10Poco"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -108,7 +120,8 @@
                 android:text="@string/radiobtn3"
                 android:id="@+id/rbP10Nada"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
         </RadioGroup>
 
         <Space
@@ -119,7 +132,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pregunta11"
-            android:id="@+id/textView21" />
+            android:id="@+id/textView21"
+            style="@style/Letras"
+            android:textStyle="italic" />
 
         <Space
             android:layout_width="match_parent"
@@ -137,7 +152,8 @@
                 android:text="@string/radiobtn1"
                 android:id="@+id/rbP11Mucho"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -145,7 +161,8 @@
                 android:text="@string/radiobtn2"
                 android:id="@+id/rbP11Poco"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -153,7 +170,8 @@
                 android:text="@string/radiobtn3"
                 android:id="@+id/rbP11Nada"
                 android:paddingEnd="25dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
         </RadioGroup>
 
         <Space
@@ -163,7 +181,7 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnSiguiente"
         android:id="@+id/continuar4"

@@ -7,25 +7,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".RecogidaDatosInteres2">
+    tools:context=".RecogidaDatosInteres2"
+    android:background="@drawable/textura">
 
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <ImageView
-            android:layout_width="242dp"
-            android:layout_height="210dp"
+            android:layout_width="338dp"
+            android:layout_height="114dp"
+
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/zumosol_prueba" />
+            android:background="@drawable/logo_aplicacion"
+            android:layout_weight="0.15"
+            android:layout_marginTop="25dp" />
 
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnFinalizar"
         android:id="@+id/guardar"
@@ -34,6 +39,5 @@
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

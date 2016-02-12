@@ -1,8 +1,6 @@
 package com.example.bahia.practicum;
 
-/**
- * Created by ivanb on 11/02/2016.
- */
+
 public class DataBaseManager{
     public static final String TABLE_NAME = "datos";
     public static final String CN_ID = "_id";

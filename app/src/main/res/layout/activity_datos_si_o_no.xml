@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".RecogidaDatosSiNo">
+    tools:context=".RecogidaDatosSiNo"
+    android:background="@drawable/textura">
 
     <LinearLayout
         android:orientation="vertical"
@@ -21,7 +22,9 @@
             android:layout_height="wrap_content"
             android:text="@string/titulo4"
             android:id="@+id/textView8"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            style="@style/Letras"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -31,7 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/preguntaSiNo1"
-            android:id="@+id/textView18" />
+            android:id="@+id/textView18"
+            style="@style/Letras"
+            android:textStyle="italic" />
 
         <Space
             android:layout_width="match_parent"
@@ -49,7 +54,8 @@
                 android:text="@string/radiobtnSi"
                 android:id="@+id/rbSI1"
                 android:paddingEnd="35dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -57,7 +63,8 @@
                 android:text="@string/radiobtnNo"
                 android:id="@+id/rbNO1"
                 android:paddingEnd="35dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
         </RadioGroup>
 
@@ -69,7 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/preguntaSiNo2"
-            android:id="@+id/textView19" />
+            android:id="@+id/textView19"
+            style="@style/Letras"
+            android:textStyle="italic" />
 
         <Space
             android:layout_width="match_parent"
@@ -87,7 +96,8 @@
                 android:text="@string/radiobtnSi"
                 android:id="@+id/rbSI2"
                 android:paddingEnd="35dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -95,7 +105,8 @@
                 android:text="@string/radiobtnNo"
                 android:id="@+id/rbNO2"
                 android:paddingEnd="35dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
         </RadioGroup>
 
@@ -107,7 +118,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/preguntaSiNo3"
-            android:id="@+id/textView20" />
+            android:id="@+id/textView20"
+            style="@style/Letras"
+            android:textStyle="italic" />
 
         <Space
             android:layout_width="match_parent"
@@ -125,7 +138,8 @@
                 android:text="@string/radiobtnSi"
                 android:id="@+id/rbSI3"
                 android:paddingEnd="35dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -133,7 +147,8 @@
                 android:text="@string/radiobtnNo"
                 android:id="@+id/rbNO3"
                 android:paddingEnd="35dp"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                style="@style/Letras"/>
 
         </RadioGroup>
 
@@ -141,19 +156,37 @@
             android:layout_width="match_parent"
             android:layout_height="15dp" />
 
-        <TextView
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:text="@string/tituloFinal"
-            android:textSize="30sp"
+            android:layout_height="15dp" />
+
+        <TextView
+            style="@style/Letras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo2"
             android:id="@+id/textView22"
-            android:gravity="center"
-            android:layout_weight="0.40" />
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            style="@style/Letras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@string/numeroBotellas"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnSiguiente"
         android:id="@+id/continuar5"

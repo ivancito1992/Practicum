@@ -8,14 +8,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecogidaDatosIniciar">
+        <activity android:name=".RecogidaDatosGenerales">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecogidaDatosGenerales">
+        <activity android:name=".RecogidaDatosIniciar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
