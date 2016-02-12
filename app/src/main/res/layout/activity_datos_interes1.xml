@@ -215,7 +215,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btnSiguiente"
         android:id="@+id/continuar2"
-        android:background="@drawable/botones_accion"
+        android:background="@drawable/btn_accion"
         android:textColor="#ffffff"
         android:textSize="30sp"
         android:layout_gravity="center"

@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btnFinalizar"
         android:id="@+id/guardar"
-        android:background="@drawable/botones_accion"
+        android:background="@drawable/btn_accion"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"

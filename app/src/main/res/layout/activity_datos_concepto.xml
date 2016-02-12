@@ -87,7 +87,7 @@
             android:weightSum="1">
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zumoClasico"
                 android:id="@+id/textView20"
@@ -97,11 +97,11 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button"
-                android:background="@drawable/botones_accion"
+                android:background="@drawable/btn_z_accion"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -110,12 +110,23 @@
                 android:text="@string/contador"
                 android:id="@+id/textView22"
                 android:layout_marginLeft="5dp"
-                style="@style/Numeros" />
+                style="@style/Numeros"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button6"
+                android:background="@drawable/btn_z_accion"
+                android:textColor="#ffffff" />
+
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -124,7 +135,7 @@
             android:weightSum="1" >
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zumoAntioxidante"
                 android:id="@+id/textView25"
@@ -134,11 +145,11 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button2"
-                android:background="@drawable/botones_accion"
+                android:background="@drawable/btn_z_accion"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -147,12 +158,23 @@
                 android:text="@string/contador"
                 android:id="@+id/textView26"
                 android:layout_marginLeft="5dp"
-                style="@style/Numeros" />
+                style="@style/Numeros"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button7"
+                android:background="@drawable/btn_z_accion"
+                android:textColor="#ffffff" />
+
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -161,7 +183,7 @@
             android:weightSum="1" >
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zumoOrganico"
                 android:id="@+id/textView27"
@@ -171,11 +193,11 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button3"
-                android:background="@drawable/botones_accion"
+                android:background="@drawable/btn_z_accion"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -184,12 +206,23 @@
                 android:text="@string/contador"
                 android:id="@+id/textView28"
                 android:layout_marginLeft="5dp"
-                style="@style/Numeros" />
+                style="@style/Numeros"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button8"
+                android:background="@drawable/btn_z_accion"
+                android:textColor="#ffffff" />
+
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -198,7 +231,7 @@
             android:weightSum="1" >
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zumoPrisma"
                 android:id="@+id/textView29"
@@ -208,11 +241,11 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button4"
-                android:background="@drawable/botones_accion"
+                android:background="@drawable/btn_z_accion"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -221,12 +254,23 @@
                 android:text="@string/contador"
                 android:id="@+id/textView30"
                 android:layout_marginLeft="5dp"
-                style="@style/Numeros" />
+                style="@style/Numeros"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button9"
+                android:background="@drawable/btn_z_accion"
+                android:textColor="#ffffff" />
+
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -235,7 +279,7 @@
             android:weightSum="1" >
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/zumoVeggies"
                 android:id="@+id/textView31"
@@ -245,11 +289,11 @@
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button5"
-                android:background="@drawable/botones_accion"
+                android:background="@drawable/btn_v_r_accion"
                 android:textColor="#ffffff" />
 
             <TextView
@@ -258,7 +302,112 @@
                 android:text="@string/contador"
                 android:id="@+id/textView32"
                 android:layout_marginLeft="5dp"
-                style="@style/Numeros" />
+                style="@style/Numeros"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button10"
+                android:background="@drawable/btn_v_r_accion"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                style="@style/LetrasOtros"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoVeggies"
+                android:id="@+id/textView2"
+                android:layout_marginLeft="15dp"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button11"
+                android:background="@drawable/btn_v_v_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                style="@style/Numeros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView33"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button12"
+                android:background="@drawable/btn_v_v_accion"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                style="@style/LetrasOtros"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zumoVeggies"
+                android:id="@+id/textView34"
+                android:layout_marginLeft="15dp"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnAñadirBotella"
+                android:id="@+id/button13"
+                android:background="@drawable/btn_v_n_accion"
+                android:textColor="#ffffff" />
+
+            <TextView
+                style="@style/Numeros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:id="@+id/textView35"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="@string/btnQuitarBotella"
+                android:id="@+id/button14"
+                android:background="@drawable/btn_v_n_accion"
+                android:textColor="#ffffff" />
         </LinearLayout>
 
     </LinearLayout>
@@ -268,7 +417,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btnSiguiente"
         android:id="@+id/continuar5"
-        android:background="@drawable/botones_accion"
+        android:background="@drawable/btn_accion"
         android:textColor="#ffffff"
         android:textSize="30sp"
         android:layout_gravity="center|bottom"
