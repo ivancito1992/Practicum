@@ -10,13 +10,15 @@ import android.widget.TextView;
 
 public class RecogidaDatosConcepto extends AppCompatActivity {
 
-    int countClasico = 0;
-    int countAntiox = 0;
-    int countOrganico = 0;
-    int countPrisma = 0;
-    int countRojo = 0;
-    int countVerde = 0;
-    int countNaranja = 0;
+    public static int countClasico = 0;
+    public static int countAntiox = 0;
+    public static int countOrganico = 0;
+    public static int countPrisma = 0;
+    public static int countRojo = 0;
+    public static int countVerde = 0;
+    public static int countNaranja = 0;
+
+    String zumoClasico = "Clasico";
 
     Button clasicoSum, antioxSum, organicoSum, prismaSum, rojoSum, verdeSum, naranjaSum;
     Button clasicoRes, antioxRes, organicoRes, prismaRes, rojoRes, verdeRes, naranjaRes;
@@ -28,7 +30,6 @@ public class RecogidaDatosConcepto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos_concepto);
-
 
         clasico = (TextView) findViewById(R.id.clasicoCount);
         antiox = (TextView) findViewById(R.id.antioxCount);
