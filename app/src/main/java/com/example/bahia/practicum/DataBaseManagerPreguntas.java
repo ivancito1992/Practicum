@@ -1,8 +1,8 @@
 package com.example.bahia.practicum;
 
 
-public class DataBaseManager{
-    public static final String TABLE_NAME = "datos";
+public class DataBaseManagerPreguntas {
+    public static final String TABLE_NAME = "preguntas";
     public static final String CN_ID = "_id";
     public static final String CN_PREGUNTAS = "Preguntas";
     public static final String CN_MUCHO = "Mucho";

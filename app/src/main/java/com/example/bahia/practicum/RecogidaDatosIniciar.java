@@ -17,7 +17,7 @@ public class RecogidaDatosIniciar extends AppCompatActivity {
         setContentView(R.layout.activity_iniciar_recogida_datos);
 
         DataBaseHelper helper = new DataBaseHelper(this);
-        SQLiteDatabase db = helper.getWritableDatabase();
+        SQLiteDatabase db = helper.getWritableDatabase(); // La primera vez me crea la BD y luego la abre para poder leer y escribir
 
         siguienteLayout();
     }
