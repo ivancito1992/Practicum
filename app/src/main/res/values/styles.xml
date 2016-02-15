@@ -22,7 +22,7 @@
     <style name="LetrasSubtitulo">
         <item name="android:textColor">@color/colorLetras</item>
         <item name="android:textSize">17sp</item>
-        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="LetrasOtros">
