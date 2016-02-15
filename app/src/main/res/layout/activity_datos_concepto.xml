@@ -26,7 +26,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button"
                 android:background="@drawable/btn_z_accion"
@@ -116,7 +116,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button6"
                 android:background="@drawable/btn_z_accion"
@@ -126,7 +126,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -146,7 +146,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button2"
                 android:background="@drawable/btn_z_accion"
@@ -164,7 +164,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button7"
                 android:background="@drawable/btn_z_accion"
@@ -174,7 +174,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -194,7 +194,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button3"
                 android:background="@drawable/btn_z_accion"
@@ -212,7 +212,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button8"
                 android:background="@drawable/btn_z_accion"
@@ -222,7 +222,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -242,7 +242,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button4"
                 android:background="@drawable/btn_z_accion"
@@ -260,7 +260,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button9"
                 android:background="@drawable/btn_z_accion"
@@ -270,7 +270,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -290,7 +290,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button5"
                 android:background="@drawable/btn_v_r_accion"
@@ -308,7 +308,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button10"
                 android:background="@drawable/btn_v_r_accion"
@@ -318,7 +318,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -338,7 +338,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button11"
                 android:background="@drawable/btn_v_v_accion"
@@ -356,7 +356,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button12"
                 android:background="@drawable/btn_v_v_accion"
@@ -365,7 +365,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -385,7 +385,7 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnAñadirBotella"
                 android:id="@+id/button13"
                 android:background="@drawable/btn_v_n_accion"
@@ -403,12 +403,16 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="45dp"
-                android:layout_height="30dp"
+                android:layout_height="27dp"
                 android:text="@string/btnQuitarBotella"
                 android:id="@+id/button14"
                 android:background="@drawable/btn_v_n_accion"
                 android:textColor="#ffffff" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
     </LinearLayout>
 
