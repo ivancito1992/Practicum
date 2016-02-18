@@ -16,11 +16,6 @@ public class RecogidaDatosIniciar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciar_recogida_datos);
 
-
-
-        //DataBaseHelper helper = new DataBaseHelper(this);
-        //SQLiteDatabase db = helper.getWritableDatabase(); // La primera vez me crea la BD y luego la abre para poder leer y escribir
-
         siguienteLayout();
     }
 
@@ -29,7 +24,7 @@ public class RecogidaDatosIniciar extends AppCompatActivity {
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RecogidaDatosIniciar.this, RecogidaDatosConcepto.class));
+                startActivity(new Intent(RecogidaDatosIniciar.this, Zumosol.class));
             }
         });
     }
