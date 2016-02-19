@@ -10,7 +10,6 @@
     tools:context=".RecogidaDatosInteres2"
     android:background="@drawable/textura">
 
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

@@ -40,44 +40,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoVeggies"
-                    android:id="@+id/textView26"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombreNaranja"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumNaranja"
                     android:background="@drawable/btn_v_n_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView28"
+                    android:id="@+id/cantidadNaranja"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button2"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resNaranja"
                     android:background="@drawable/btn_v_n_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -87,44 +90,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoVeggies"
-                    android:id="@+id/textView30"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombreRojo"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button3"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumRojo"
                     android:background="@drawable/btn_v_r_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView32"
+                    android:id="@+id/cantidadRojo"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button4"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resRojo"
                     android:background="@drawable/btn_v_r_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -134,44 +140,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoVeggies"
-                    android:id="@+id/textView36"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombreVerde"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button7"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumVerde"
                     android:background="@drawable/btn_v_v_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView37"
+                    android:id="@+id/cantidadVerde"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button8"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resVerde"
                     android:background="@drawable/btn_v_v_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -181,44 +190,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoClasico"
-                    android:id="@+id/textView33"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombreClasico"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button5"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumClasico"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView35"
+                    android:id="@+id/cantidadClasico"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button6"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resClasico"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -228,44 +240,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoAntioxidante"
-                    android:id="@+id/textView43"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombreAntiox"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button13"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumAntiox"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView44"
+                    android:id="@+id/cantidadAntiox"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button14"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resAntiox"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -275,44 +290,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoOrganico"
-                    android:id="@+id/textView41"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombreOrganico"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button11"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumOrganico"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView42"
+                    android:id="@+id/cantidadOrganico"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button12"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resOrganico"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -322,44 +340,47 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:text="@string/zumoPrisma"
-                    android:id="@+id/textView38"
-                    android:layout_marginLeft="15dp"
-                    android:paddingEnd="30dp" />
+                    android:id="@+id/nombrePrisma"
+                    android:layout_marginLeft="15dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
-                    android:id="@+id/button9"
+                    android:layout_height="30dp"
+                    android:text="@string/btnAñadir"
+                    android:id="@+id/sumPrisma"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
-                    android:id="@+id/textView39"
+                    android:id="@+id/cantidadPrisma"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
-                    android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
-                    android:id="@+id/button10"
+                    android:layout_height="30dp"
+                    android:text="@string/btnQuitar"
+                    android:id="@+id/resPrisma"
                     android:background="@drawable/btn_z_accion"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:gravity="center" />
             </LinearLayout>
 
             <Space
@@ -395,14 +416,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta1"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -411,25 +433,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta1"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta1"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta1"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -442,14 +465,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta1"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -458,25 +482,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta1"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta1"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta1"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -489,14 +514,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta1"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -505,25 +531,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta1"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta1"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta1"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -547,14 +574,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta2"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -563,25 +591,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta2"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta2"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta2"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -594,14 +623,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta2"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -610,25 +640,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta2"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta2"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta2"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -641,14 +672,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta2"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -657,25 +689,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta2"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta2"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta2"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -699,14 +732,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta3"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -715,25 +749,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta3"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta3"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta3"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -746,14 +781,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta3"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -762,25 +798,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta3"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta3"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta3"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -793,14 +830,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta3"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -809,25 +847,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta3"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta3"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta3"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -851,14 +890,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta4"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -867,25 +907,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta4"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta4"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -898,14 +939,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta4"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -914,25 +956,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta4"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta4"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -945,14 +988,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta4"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -961,25 +1005,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta4"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta4"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta4"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1003,14 +1048,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta5"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1019,25 +1065,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta5"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta5"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta5"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1050,14 +1097,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta5"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1066,25 +1114,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta5"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta5"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta5"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1097,14 +1146,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta5"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1113,25 +1163,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta5"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta5"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta5"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1155,14 +1206,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta6"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1171,25 +1223,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta6"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta6"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta6"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1202,14 +1255,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta6"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1218,25 +1272,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta6"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta6"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta6"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1249,14 +1304,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta6"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1265,25 +1321,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta6"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta6"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta6"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1307,14 +1364,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta7"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1323,25 +1381,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta7"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta7"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta7"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1354,14 +1413,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta7"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1370,25 +1430,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta7"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta7"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta7"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1401,14 +1462,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta7"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1417,25 +1479,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta7"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta7"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta7"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1459,14 +1522,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta8"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1475,25 +1539,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta8"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta8"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta8"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1506,14 +1571,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta8"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1522,25 +1588,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta8"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta8"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta8"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1553,14 +1620,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta8"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1569,25 +1637,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta8"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta8"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta8"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1611,14 +1680,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta9"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1627,25 +1697,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta9"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta9"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta9"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1658,14 +1729,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta9"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1674,25 +1746,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta9"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta9"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta9"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1705,14 +1778,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta9"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1721,25 +1795,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta9"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta9"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta9"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1763,14 +1838,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta10"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1779,25 +1855,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta10"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta10"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta10"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1810,14 +1887,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta10"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1826,25 +1904,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta10"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta10"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta10"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1857,14 +1936,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta10"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1873,25 +1953,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta10"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta10"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta10"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1915,14 +1996,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn1"
+                    android:text="@string/opcionMucho"
                     android:id="@+id/muchoPregunta11"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1931,25 +2013,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorMuchoPregunta11"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorMuchoPregunta11"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorMuchoPregunta11"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -1962,14 +2045,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn2"
+                    android:text="@string/opcionPoco"
                     android:id="@+id/PocoPregunta11"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -1978,25 +2062,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorPocoPregunta11"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorPocoPregunta11"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorPocoPregunta11"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -2009,14 +2094,15 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:weightSum="1" >
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
 
                 <TextView
                     style="@style/LetrasOtros"
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/radiobtn3"
+                    android:text="@string/opcionNada"
                     android:id="@+id/nadaPregunta11"
                     android:layout_marginLeft="15dp"
                     android:paddingEnd="30dp" />
@@ -2025,25 +2111,26 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnAñadirBotella"
+                    android:text="@string/btnAñadir"
                     android:id="@+id/sumadorNadaPregunta11"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
 
                 <TextView
                     style="@style/Numeros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
                     android:text="@string/contador"
                     android:id="@+id/contadorNadaPregunta11"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="45dp"
                     android:layout_height="27dp"
-                    android:text="@string/btnQuitarBotella"
+                    android:text="@string/btnQuitar"
                     android:id="@+id/restadorNadaPregunta11"
                     android:background="@drawable/btn_z_accion"
                     android:textColor="#ffffff" />
@@ -2239,7 +2326,7 @@
                 android:id="@+id/continuar2"
                 android:background="@drawable/btn_accion"
                 android:textColor="#ffffff"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:layout_gravity="center"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true" />

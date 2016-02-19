@@ -36,15 +36,15 @@
     <string name="zumoVeggies">Veggies</string>
     <string name="otrosZumos">Otros zumos</string>
 
-    <string name="radiobtn1">Mucho</string>
-    <string name="radiobtn2">Poco</string>
-    <string name="radiobtn3">Nada</string>
+    <string name="opcionMucho">Mucho</string>
+    <string name="opcionPoco">Poco</string>
+    <string name="opcionNada">Nada</string>
     <string name="radiobtnSi">SI</string>
     <string name="radiobtnNo">NO</string>
 
     <string name="btnIniciar">Comenzar</string>
     <string name="btnFinalizar">Guardar y finalizar</string>
     <string name="btnSiguiente">-></string>
-    <string name="btnAñadirBotella">+</string>
-    <string name="btnQuitarBotella">-</string>
+    <string name="btnAñadir">+</string>
+    <string name="btnQuitar">-</string>
 </resources>
