@@ -85,7 +85,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="8dp" />
+                android:layout_height="12dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -385,7 +385,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="65dp"
                 android:id="@+id/espacioEntrePartes" />
 
             <TextView
@@ -407,7 +407,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta1"
-                android:id="@+id/textView46" />
+                android:id="@+id/pregunta1" />
 
             <Space
                 android:layout_width="match_parent"
@@ -565,7 +565,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta2"
-                android:id="@+id/textView47" />
+                android:id="@+id/pregunta2" />
 
             <Space
                 android:layout_width="match_parent"
@@ -723,7 +723,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta3"
-                android:id="@+id/textView48" />
+                android:id="@+id/pregunta3" />
 
             <Space
                 android:layout_width="match_parent"
@@ -881,7 +881,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta4"
-                android:id="@+id/textView49" />
+                android:id="@+id/pregunta4" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1039,7 +1039,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta5"
-                android:id="@+id/textView50" />
+                android:id="@+id/pregunta5" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1197,7 +1197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta6"
-                android:id="@+id/textView51" />
+                android:id="@+id/pregunta6" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1355,7 +1355,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta7"
-                android:id="@+id/textView52" />
+                android:id="@+id/pregunta7" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1513,7 +1513,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta8"
-                android:id="@+id/textView53" />
+                android:id="@+id/pregunta8" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1671,7 +1671,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta9"
-                android:id="@+id/textView54" />
+                android:id="@+id/pregunta9" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1829,7 +1829,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta10"
-                android:id="@+id/textView55" />
+                android:id="@+id/pregunta10" />
 
             <Space
                 android:layout_width="match_parent"
@@ -1987,7 +1987,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pregunta11"
-                android:id="@+id/textView56" />
+                android:id="@+id/pregunta11" />
 
             <Space
                 android:layout_width="match_parent"
@@ -2138,7 +2138,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="45dp"/>
+                android:layout_height="65dp"/>
 
             <TextView
                 style="@style/LetrasTitulo"
@@ -2151,34 +2151,40 @@
                 android:gravity="center" />
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="1"
                 android:gravity="center" >
 
                 <EditText
                     style="@style/LetrasOtros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:text="@string/nombrePersona"
-                    android:ems="9"
-                    android:id="@+id/editText4"
-                    android:editable="false" />
+                    android:id="@+id/azafata"
+                    android:editable="true" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
 
                 <EditText
                     style="@style/LetrasOtros"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:text="@string/nombreCentro"
-                    android:ems="9"
-                    android:id="@+id/editText5" />
+                    android:id="@+id/centro"
+                    android:editable="true" />
             </LinearLayout>
 
             <Space
@@ -2196,8 +2202,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/diaDeRecogida"
-                    android:id="@+id/editText6"
-                    android:inputType="date" />
+                    android:id="@+id/dia"
+                    android:editable="true" />
             </LinearLayout>
 
             <Space
@@ -2209,7 +2215,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/preguntaSiNo1"
-                android:id="@+id/textView58" />
+                android:id="@+id/preguntaSiNo1" />
 
             <Space
                 android:layout_width="match_parent"
@@ -2226,15 +2232,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radiobtnSi"
-                    android:id="@+id/radioButton40"
-                    android:paddingEnd="35dp" />
+                    android:id="@+id/SI1"
+                    android:paddingEnd="35dp"
+                    android:checked="true" />
 
                 <RadioButton
                     style="@style/LetrasOtros"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radiobtnNo"
-                    android:id="@+id/radioButton41"
+                    android:id="@+id/NO1"
                     android:paddingEnd="35dp" />
             </RadioGroup>
 
@@ -2247,7 +2254,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/preguntaSiNo2"
-                android:id="@+id/textView59" />
+                android:id="@+id/preguntaSiNo2" />
 
             <Space
                 android:layout_width="match_parent"
@@ -2264,15 +2271,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radiobtnSi"
-                    android:id="@+id/radioButton42"
-                    android:paddingEnd="35dp" />
+                    android:id="@+id/SI2"
+                    android:paddingEnd="35dp"
+                    android:checked="true" />
 
                 <RadioButton
                     style="@style/LetrasOtros"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radiobtnNo"
-                    android:id="@+id/radioButton43"
+                    android:id="@+id/NO2"
                     android:paddingEnd="35dp" />
             </RadioGroup>
 
@@ -2285,7 +2293,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/preguntaSiNo3"
-                android:id="@+id/textView60" />
+                android:id="@+id/preguntaSiNo3" />
 
             <Space
                 android:layout_width="match_parent"
@@ -2302,34 +2310,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radiobtnSi"
-                    android:id="@+id/radioButton44"
-                    android:paddingEnd="35dp" />
+                    android:id="@+id/SI3"
+                    android:paddingEnd="35dp"
+                    android:checked="true" />
 
                 <RadioButton
                     style="@style/LetrasOtros"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radiobtnNo"
-                    android:id="@+id/radioButton45"
+                    android:id="@+id/NO3"
                     android:paddingEnd="35dp" />
             </RadioGroup>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="65dp"
                 android:id="@+id/space" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btnFinalizar"
-                android:id="@+id/continuar2"
+                android:id="@+id/guardarEnDB"
                 android:background="@drawable/btn_accion"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
-                android:layout_gravity="center"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_gravity="center"/>
+                <!--android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"-->
 
         </LinearLayout>
 

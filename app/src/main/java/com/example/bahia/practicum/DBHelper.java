@@ -17,6 +17,10 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(DBManager.CREATE_TABLE_ZUMOS);
+        db.execSQL(DBManager.CREATE_TABLE_AZAFATA);
+        db.execSQL(DBManager.CREATE_TABLE_ESTADISTICAS);
+        db.execSQL(DBManager.CREATE_TABLE_PREGUNTAS);
+        db.execSQL(DBManager.CREATE_TABLE_SINO);
     }
 
     @Override

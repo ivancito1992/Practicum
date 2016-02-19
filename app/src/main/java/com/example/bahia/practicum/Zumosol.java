@@ -4,12 +4,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 
 public class Zumosol extends AppCompatActivity implements View.OnClickListener {
 
     int contadorClasico = 0;
+    int numeroPreguntasGenerales = 11;
 
     int contadorAntiox, contadorOrganico, contadorPrisma, contadorRojo, contadorVerde, contadorNaranja = 0;
 
@@ -20,7 +23,15 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
             contadorPoco9, contadorPoco10, contadorPoco11 = 0;
 
     int contadorNada1, contadorNada2, contadorNada3, contadorNada4, contadorNada5, contadorNada6, contadorNada7, contadorNada8,
-            contadorNada9, contadorNada10, contadorNada11 = 0 ;
+            contadorNada9, contadorNada10, contadorNada11 = 0;
+
+    int[] muchos = {contadorMucho1, contadorMucho2, contadorMucho3, contadorMucho4, contadorMucho5, contadorMucho6, contadorMucho7,
+            contadorMucho8, contadorMucho9, contadorMucho10, contadorMucho11};
+    int[] pocos = {contadorPoco1, contadorPoco2, contadorPoco3, contadorPoco4, contadorPoco5, contadorPoco6, contadorPoco7, contadorPoco8,
+            contadorPoco9, contadorPoco10, contadorPoco11};
+    int[] nadas = {contadorNada1, contadorNada2, contadorNada3, contadorNada4, contadorNada5, contadorNada6, contadorNada7, contadorNada8,
+            contadorNada9, contadorNada10, contadorNada11};
+    int[] zumos = {contadorAntiox, contadorOrganico, contadorPrisma, contadorRojo, contadorVerde, contadorNaranja};
 
     Button sumadorClasico, sumadorAntiox, sumadorOrganico, sumadorPrisma, sumadorRojo, sumadorVerde, sumadorNaranja;
     Button restadorClasico, restadorAntiox, restadorOrganico, restadorPrisma, restadorRojo, restadorVerde, restadorNaranja;
@@ -35,15 +46,38 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
     Button resNada1,resNada2,resNada3,resNada4,resNada5,resNada6,resNada7,resNada8,resNada9,resNada10,resNada11;
 
     TextView cantidadClasico, cantidadAntiox, cantidadOrganico, cantidadPrisma, cantidadRojo, cantidadVerde, cantidadNaranja;
-
     TextView cantidadMucho1, cantidadMucho2, cantidadMucho3, cantidadMucho4, cantidadMucho5, cantidadMucho6, cantidadMucho7, cantidadMucho8, cantidadMucho9, cantidadMucho10, cantidadMucho11;
     TextView cantidadPoco1, cantidadPoco2, cantidadPoco3, cantidadPoco4, cantidadPoco5, cantidadPoco6, cantidadPoco7, cantidadPoco8, cantidadPoco9, cantidadPoco10, cantidadPoco11;
     TextView cantidadNada1, cantidadNada2, cantidadNada3, cantidadNada4, cantidadNada5, cantidadNada6, cantidadNada7, cantidadNada8, cantidadNada9, cantidadNada10, cantidadNada11;
 
 
+    TextView pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10, pregunta11, preguntaSN1, preguntaSN2, preguntaSN3;
+    TextView[] preguntasGenerales = {pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10, pregunta11};
+    TextView[] preguntasSINO = {preguntaSN1, preguntaSN2, preguntaSN3};
+
+    RadioButton si1, si2, si3, no1, no2, no3;
+
+    String[] textosGenerales = {};
+    String[] textosSINO = {};
+    String[] textosZumos = {};
+
+    TextView clasico, antiox, organico, prisma, rojo, verde, naranja;
+    TextView[] tipoZumos = {clasico, antiox, organico, prisma, rojo, verde, naranja};
+
+    EditText azafata, centro, dia;
+    String nombreAzafata, nombreCentro, diaRecogida;
+    float[] estadisticasMucho = {};
+    float[] estadisticasPoco = {};
+    float[] estadisticasNada = {};
+
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zumosol);
+
+
 
         /* BOTONES PARA AUMENTAR EL CONTADOR DE ZUMOS */
 
@@ -229,7 +263,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         resNada11 = (Button) findViewById(R.id.restadorNadaPregunta11);
         resNada11.setOnClickListener(this);
 
-        /*FALTAN LOS TEXTVIEW*/
+        /*INICIALIZAR EL TEXTVIEW CON LOS CONTADORES A 0*/
 
         cantidadClasico = (TextView) findViewById(R.id.cantidadClasico);
         cantidadAntiox = (TextView) findViewById(R.id.cantidadAntiox);
@@ -272,13 +306,122 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         cantidadNada10 = (TextView) findViewById(R.id.contadorNadaPregunta10);
         cantidadNada11 = (TextView) findViewById(R.id.contadorNadaPregunta11);
 
+        /* CARGAR EL TEXTO DE LAS PREGUNTAS */
+
+        pregunta1 = (TextView) findViewById(R.id.pregunta1);
+        pregunta2 = (TextView) findViewById(R.id.pregunta2);
+        pregunta3 = (TextView) findViewById(R.id.pregunta3);
+        pregunta4 = (TextView) findViewById(R.id.pregunta4);
+        pregunta5 = (TextView) findViewById(R.id.pregunta5);
+        pregunta6 = (TextView) findViewById(R.id.pregunta6);
+        pregunta7 = (TextView) findViewById(R.id.pregunta7);
+        pregunta8 = (TextView) findViewById(R.id.pregunta8);
+        pregunta9 = (TextView) findViewById(R.id.pregunta9);
+        pregunta10 = (TextView) findViewById(R.id.pregunta10);
+        pregunta11 = (TextView) findViewById(R.id.pregunta11);
+        preguntaSN1 = (TextView) findViewById(R.id.preguntaSiNo1);
+        preguntaSN2 = (TextView) findViewById(R.id.preguntaSiNo2);
+        preguntaSN3 = (TextView) findViewById(R.id.preguntaSiNo3);
+
+        /* CARGAR EL ID DE LOS RADIOBUTTONS */
+
+        si1 = (RadioButton) findViewById(R.id.SI1);
+        si2 = (RadioButton) findViewById(R.id.SI2);
+        si3 = (RadioButton) findViewById(R.id.SI3);
+        no1 = (RadioButton) findViewById(R.id.NO1);
+        no2 = (RadioButton) findViewById(R.id.NO2);
+        no3 = (RadioButton) findViewById(R.id.NO3);
+
+        /* CARGAR DATOS DE LA AZAFATA Y DEL CENTRO */
+
+        azafata = (EditText) findViewById(R.id.azafata);
+        nombreAzafata = azafata.getText().toString();
+        centro = (EditText) findViewById(R.id.centro);
+        nombreCentro = centro.getText().toString();
+        dia = (EditText) findViewById(R.id.dia);
+        diaRecogida = dia.getText().toString();
+
+    }
 
 
+    public String[] textos(TextView[] tvs){
+        String[] aux = new String[0];
+        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
+            aux[i] = tvs[i].getText().toString();
+        }
+        return aux;
+    }
+
+    public float[] statsMucho(int[]muchos, int[]pocos, int[]nadas){
+        float[] aux = new float[0];
+        int total;
+        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
+            total = muchos[i] + pocos[i] + nadas[i];
+            aux[i] = muchos[i]/total;
+        }
+        return aux;
+    }
+
+    public float[] statsPoco(int[]muchos, int[]pocos, int[]nadas){
+        float[] aux = new float[0];
+        int total;
+        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
+            total = muchos[i] + pocos[i] + nadas[i];
+            aux[i] = pocos[i]/total;
+        }
+        return aux;
+    }
+
+    public float[] statsNada(int[]muchos, int[]pocos, int[]nadas){
+        float[] aux = new float[0];
+        int total;
+        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
+            total = muchos[i] + pocos[i] + nadas[i];
+            aux[i] = nadas[i]/total;
+        }
+        return aux;
     }
 
     @Override
     public void onClick(View v) {
+        DBManager manager = new DBManager(this);
+        textosGenerales = textos(preguntasGenerales);
+        textosZumos = textos(tipoZumos);
+        textosSINO = textos(preguntasSINO);
+        estadisticasMucho = statsMucho(muchos, pocos, nadas);
+        estadisticasPoco = statsPoco(muchos, pocos, nadas);
+        estadisticasNada = statsNada(muchos, pocos, nadas);
         switch (v.getId()){
+
+            case R.id.guardarEnDB:
+                /* INSERT DE LAS PREGUNTAS GENERALES */
+                manager.insertarPreguntasGenerales(textosGenerales,muchos,pocos,nadas);
+                /* INSERT DE LOS ZUMOS */
+                manager.insertarZumos(textosZumos,zumos);
+                /* INSERT DE LAS PREGUNTAS SI O NO */
+                if(si1.isChecked()){
+                    manager.insertarPreguntasSiNo(textosSINO[0],1,0);
+                }
+                    else{
+                    manager.insertarPreguntasSiNo(textosSINO[0],0,1);
+                }
+                if(si2.isChecked()){
+                    manager.insertarPreguntasSiNo(textosSINO[1],1,0);
+                }
+                else{
+                    manager.insertarPreguntasSiNo(textosSINO[1],0,1);
+                }
+                if(si2.isChecked()){
+                    manager.insertarPreguntasSiNo(textosSINO[2],1,0);
+                }
+                else{
+                    manager.insertarPreguntasSiNo(textosSINO[2],0,1);
+                }
+                /* INSERT DE LOS DATOS DE LA AZAFATA */
+                manager.insertarDatosAzafata(nombreAzafata, nombreCentro, diaRecogida);
+                /* INSERT DE LOS DATOS ESTADISTICOS */
+                manager.insertarDatosEstadisticos(textosGenerales, estadisticasMucho, estadisticasPoco, estadisticasNada);
+                break;
 
             /* SUMAR CANTIDAD ZUMOS */
 
