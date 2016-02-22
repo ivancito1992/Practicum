@@ -7,10 +7,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class DBManager {
-
-    public int numeroPreguntasGenerales = 11;
-    public int numeroTiposZumos = 7;
-
     /* TABLA DE LOS ZUMOS */
 
     public static final String TABLE_NAME_ZUMOS = "botellas";
@@ -28,9 +24,9 @@ public class DBManager {
     public static final String TABLE_NAME_PREGUNTAS = "preguntas";
     public static final String CN_ID_PREGUNTAS = "_id";
     public static final String CN_PREGUNTAS = "Preguntas";
-    public static final String CN_MUCHO = "Respuesta Mucho";
-    public static final String CN_POCO = "Respuesta Poco";
-    public static final String CN_NADA = "Respuesta Nada";
+    public static final String CN_MUCHO = "Mucho";
+    public static final String CN_POCO = "Poco";
+    public static final String CN_NADA = "Nada";
 
     public static final String CREATE_TABLE_PREGUNTAS = "create table " + TABLE_NAME_PREGUNTAS + " ("
             + CN_ID_PREGUNTAS + " integer primary key autoincrement,"
@@ -58,8 +54,8 @@ public class DBManager {
     public static final String TABLE_NAME_SINO = "sino";
     public static final String CN_ID_SINO = "_id";
     public static final String CN_PREGUNTAS_SINO = "Preguntas";
-    public static final String CN_SI = "Respuesta SI";
-    public static final String CN_NO = "Respuesta NO";
+    public static final String CN_SI = "SI";
+    public static final String CN_NO = "NO";
 
     public static final String CREATE_TABLE_SINO = "create table " + TABLE_NAME_SINO + " ("
             + CN_ID_SINO + " integer primary key autoincrement,"
@@ -72,9 +68,9 @@ public class DBManager {
     public static final String TABLE_NAME_ESTADISTICAS = "estadisticas";
     public static final String CN_ID_ESTADISTICAS = "_id";
     public static final String CN_PREGUNTAS_STATS = "Preguntas";
-    public static final String CN_PORCENTAJE_MUCHO = "% Mucho";
-    public static final String CN_PORCENTAJE_POCO = "% Poco";
-    public static final String CN_PORCENTAJE_NADA = "% Nada";
+    public static final String CN_PORCENTAJE_MUCHO = "Mucho";
+    public static final String CN_PORCENTAJE_POCO = "Poco";
+    public static final String CN_PORCENTAJE_NADA = "Nada";
 
     public static final String CREATE_TABLE_ESTADISTICAS = "create table " + TABLE_NAME_ESTADISTICAS + " ("
             + CN_ID_ESTADISTICAS + " integer primary key autoincrement,"
@@ -84,33 +80,25 @@ public class DBManager {
             + CN_PORCENTAJE_NADA + " float);";
 
 
-    private DBHelper helper;
     private SQLiteDatabase db;
 
     public DBManager(Context context) {
-        helper = new DBHelper(context);
+        DBHelper helper = new DBHelper(context);
         db = helper.getWritableDatabase();
 
     }
 
-
-    private ContentValues valuesGeneratorPreguntasGenerales(String[] textos, int[] mucho, int[] poco, int[] nada) {
-        ContentValues values = new ContentValues();
-        int i;
-        for (i = 0; i < numeroPreguntasGenerales - 1; i++) {
-            values.put(CN_PREGUNTAS, textos[i]);
-            values.put(CN_MUCHO, mucho[i]);
-            values.put(CN_POCO, poco[i]);
-            values.put(CN_NADA, nada[i]);
-        }
-        return values;
+    private ContentValues VGGenerales(String pregunta, int mucho, int poco, int nada) {
+        ContentValues v = new ContentValues();
+        v.put(CN_PREGUNTAS, pregunta);
+        v.put(CN_MUCHO, mucho);
+        v.put(CN_POCO, poco);
+        v.put(CN_NADA, nada);
+        return v;
     }
 
-    public void insertarPreguntasGenerales(String[] textos, int[] mucho, int[] poco, int[] nada) {
-        int i;
-        for (i = 0; i < numeroPreguntasGenerales - 1; i++) {
-            db.insert(TABLE_NAME_PREGUNTAS, null, valuesGeneratorPreguntasGenerales(textos, mucho, poco, nada));
-        }
+    public void insertarPreguntasGenerales(String pregunta, int mucho, int poco, int nada) {
+        db.insert(TABLE_NAME_PREGUNTAS, null, VGGenerales(pregunta, mucho, poco, nada));
     }
 
     private ContentValues valuesGeneratorPregutnasSiNo(String texto, int si, int no) {
@@ -125,22 +113,15 @@ public class DBManager {
         db.insert(TABLE_NAME_SINO, null, valuesGeneratorPregutnasSiNo(texto, si, no));
     }
 
-    private ContentValues valuesGeneratorZumos(String[] nombreZumo, int[] cantidad) {
-        ContentValues values = new ContentValues();
-        int i;
-        for (i = 0; i < numeroTiposZumos - 1; i++) {
-            values.put(CN_BOTELLAS, nombreZumo[i]);
-            values.put(CN_NUMERO, cantidad[i]);
-        }
-        return values;
+    private ContentValues VGZumos(String nombreZumo, int cantidad) {
+        ContentValues v = new ContentValues();
+        v.put(CN_BOTELLAS, nombreZumo);
+        v.put(CN_NUMERO, cantidad);
+        return v;
     }
 
-    public void insertarZumos(String[] nombreZumo, int[] numeroZumos) {
-        int i;
-        for (i = 0; i < numeroTiposZumos - 1; i++) {
-            db.insert(TABLE_NAME_ZUMOS, null, valuesGeneratorZumos(nombreZumo, numeroZumos)); /* esto devuelve 0 si correcto y -1 si error*/
-            //db.execSQL("insert into "+TABLE_NAME_ZUMOS+" values (null,'"+nombreZumo[i]+"',"+numeroZumos[i]+")");
-        }
+    public void insertarZumos(String nombreZumo, int cantidad) {
+        db.insert(TABLE_NAME_ZUMOS, null, VGZumos(nombreZumo, cantidad));
     }
 
     private ContentValues valuesGeneratorAzafata(String azafata, String centro, String dia) {
@@ -155,22 +136,17 @@ public class DBManager {
         db.insert(TABLE_NAME_AZAFATA, null, valuesGeneratorAzafata(azafata, centro, dia));
     }
 
-    private ContentValues valuesGeneratorEstadisticas(String[] preguntas, float[] statMucho, float[] statPoco, float[] statNada){
+    private ContentValues VGEstadisticas(String pregunta, float sM, float sP, float sN) {
         ContentValues values = new ContentValues();
-        int i;
-        for (i = 0; i < numeroPreguntasGenerales - 1; i++) {
-            values.put(CN_PREGUNTAS_STATS, preguntas[i]);
-            values.put(CN_PORCENTAJE_MUCHO, statMucho[i]);
-            values.put(CN_PORCENTAJE_POCO, statPoco[i]);
-            values.put(CN_PORCENTAJE_NADA, statNada[i]);
-        }
+        values.put(CN_PREGUNTAS_STATS, pregunta);
+        values.put(CN_PORCENTAJE_MUCHO, sM);
+        values.put(CN_PORCENTAJE_POCO, sP);
+        values.put(CN_PORCENTAJE_NADA, sN);
         return values;
     }
 
-    public void insertarDatosEstadisticos(String[] preguntas, float[] statMucho, float[] statPoco, float[] statNada){
-        int i;
-        for (i = 0; i < numeroPreguntasGenerales - 1; i++) {
-            db.insert(TABLE_NAME_ESTADISTICAS, null, valuesGeneratorEstadisticas(preguntas, statMucho, statPoco, statNada));
-        }
+    public void insertarDatosEstadisticos(String pregunta, float sM, float sP, float sN) {
+        db.insert(TABLE_NAME_ESTADISTICAS, null, VGEstadisticas(pregunta, sM, sP, sN));
     }
 }
+

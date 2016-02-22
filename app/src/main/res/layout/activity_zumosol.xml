@@ -2331,17 +2331,12 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/btnFinalizar"
+                android:text="@string/btnGuardar"
                 android:id="@+id/guardarEnDB"
                 android:background="@drawable/btn_accion"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
-                <!--android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"-->
-
         </LinearLayout>
-
     </ScrollView>
-
 </RelativeLayout>

@@ -43,8 +43,8 @@
     <string name="radiobtnNo">NO</string>
 
     <string name="btnIniciar">Comenzar</string>
-    <string name="btnFinalizar">Guardar y finalizar</string>
-    <string name="btnSiguiente">-></string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="btnFinalizar">Salir</string>
     <string name="btnAñadir">+</string>
     <string name="btnQuitar">-</string>
 </resources>

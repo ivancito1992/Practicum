@@ -1,5 +1,6 @@
 package com.example.bahia.practicum;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,10 +12,7 @@ import android.widget.TextView;
 
 public class Zumosol extends AppCompatActivity implements View.OnClickListener {
 
-    int contadorClasico = 0;
-    int numeroPreguntasGenerales = 11;
-
-    int contadorAntiox, contadorOrganico, contadorPrisma, contadorRojo, contadorVerde, contadorNaranja = 0;
+    int contadorClasico, contadorAntiox, contadorOrganico, contadorPrisma, contadorRojo, contadorVerde, contadorNaranja = 0;
 
     int contadorMucho1, contadorMucho2, contadorMucho3, contadorMucho4, contadorMucho5, contadorMucho6, contadorMucho7,
             contadorMucho8, contadorMucho9, contadorMucho10, contadorMucho11 = 0;
@@ -25,13 +23,9 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
     int contadorNada1, contadorNada2, contadorNada3, contadorNada4, contadorNada5, contadorNada6, contadorNada7, contadorNada8,
             contadorNada9, contadorNada10, contadorNada11 = 0;
 
-    int[] muchos = {contadorMucho1, contadorMucho2, contadorMucho3, contadorMucho4, contadorMucho5, contadorMucho6, contadorMucho7,
-            contadorMucho8, contadorMucho9, contadorMucho10, contadorMucho11};
-    int[] pocos = {contadorPoco1, contadorPoco2, contadorPoco3, contadorPoco4, contadorPoco5, contadorPoco6, contadorPoco7, contadorPoco8,
-            contadorPoco9, contadorPoco10, contadorPoco11};
-    int[] nadas = {contadorNada1, contadorNada2, contadorNada3, contadorNada4, contadorNada5, contadorNada6, contadorNada7, contadorNada8,
-            contadorNada9, contadorNada10, contadorNada11};
-    int[] zumos = {contadorAntiox, contadorOrganico, contadorPrisma, contadorRojo, contadorVerde, contadorNaranja};
+    //float sMucho1, sMucho2, sMucho3, sMucho4, sMucho5, sMucho6, sMucho7, sMucho8, sMucho9, sMucho10, sMucho11;
+    //float sPoco1, sPoco2, sPoco3, sPoco4, sPoco5, sPoco6, sPoco7, sPoco8, sPoco9, sPoco10, sPoco11;
+    //float sNada1, sNada2, sNada3, sNada4, sNada5, sNada6, sNada7, sNada8, sNada9, sNada10, sNada11;
 
     Button sumadorClasico, sumadorAntiox, sumadorOrganico, sumadorPrisma, sumadorRojo, sumadorVerde, sumadorNaranja;
     Button restadorClasico, restadorAntiox, restadorOrganico, restadorPrisma, restadorRojo, restadorVerde, restadorNaranja;
@@ -50,26 +44,15 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
     TextView cantidadPoco1, cantidadPoco2, cantidadPoco3, cantidadPoco4, cantidadPoco5, cantidadPoco6, cantidadPoco7, cantidadPoco8, cantidadPoco9, cantidadPoco10, cantidadPoco11;
     TextView cantidadNada1, cantidadNada2, cantidadNada3, cantidadNada4, cantidadNada5, cantidadNada6, cantidadNada7, cantidadNada8, cantidadNada9, cantidadNada10, cantidadNada11;
 
-
+    TextView nombreClasico, nombreAntiox, nombreOrganico, nombrePrisma, nombreRojo, nombreVerde, nombreNaranja;
+    String clasico, antiox, organico, prisma, rojo, verde, naranja;
     TextView pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10, pregunta11, preguntaSN1, preguntaSN2, preguntaSN3;
-    TextView[] preguntasGenerales = {pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10, pregunta11};
-    TextView[] preguntasSINO = {preguntaSN1, preguntaSN2, preguntaSN3};
+    String preg1, preg2, preg3, preg4, preg5, preg6, preg7, preg8, preg9, preg10, preg11, pregSiNo1, pregSiNo2, pregSiNo3;
 
     RadioButton si1, si2, si3, no1, no2, no3;
 
-    String[] textosGenerales = {};
-    String[] textosSINO = {};
-    String[] textosZumos = {};
-
-    TextView clasico, antiox, organico, prisma, rojo, verde, naranja;
-    TextView[] tipoZumos = {clasico, antiox, organico, prisma, rojo, verde, naranja};
-
     EditText azafata, centro, dia;
     String nombreAzafata, nombreCentro, diaRecogida;
-    float[] estadisticasMucho = {};
-    float[] estadisticasPoco = {};
-    float[] estadisticasNada = {};
-
 
 
 
@@ -306,22 +289,53 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         cantidadNada10 = (TextView) findViewById(R.id.contadorNadaPregunta10);
         cantidadNada11 = (TextView) findViewById(R.id.contadorNadaPregunta11);
 
+        /* CARGAR EL TEXTO DE LOS ZUMOS */
+
+        nombreClasico = (TextView) findViewById(R.id.nombreClasico);
+        clasico = nombreClasico.getText().toString();
+        nombreAntiox = (TextView) findViewById(R.id.nombreAntiox);
+        antiox = nombreAntiox.getText().toString();
+        nombreOrganico = (TextView) findViewById(R.id.nombreOrganico);
+        organico = nombreOrganico.getText().toString();
+        nombrePrisma = (TextView) findViewById(R.id.nombrePrisma);
+        prisma = nombrePrisma.getText().toString();
+        nombreRojo = (TextView) findViewById(R.id.nombreRojo);
+        rojo = nombreRojo.getText().toString();
+        nombreVerde = (TextView) findViewById(R.id.nombreVerde);
+        verde = nombreVerde.getText().toString();
+        nombreNaranja = (TextView) findViewById(R.id.nombreNaranja);
+        naranja = nombreNaranja.getText().toString();
+
         /* CARGAR EL TEXTO DE LAS PREGUNTAS */
 
         pregunta1 = (TextView) findViewById(R.id.pregunta1);
+        preg1 = pregunta1.getText().toString();
         pregunta2 = (TextView) findViewById(R.id.pregunta2);
+        preg2 = pregunta2.getText().toString();
         pregunta3 = (TextView) findViewById(R.id.pregunta3);
+        preg3 = pregunta3.getText().toString();
         pregunta4 = (TextView) findViewById(R.id.pregunta4);
+        preg4 = pregunta4.getText().toString();
         pregunta5 = (TextView) findViewById(R.id.pregunta5);
+        preg5 = pregunta5.getText().toString();
         pregunta6 = (TextView) findViewById(R.id.pregunta6);
+        preg6 = pregunta6.getText().toString();
         pregunta7 = (TextView) findViewById(R.id.pregunta7);
+        preg7 = pregunta7.getText().toString();
         pregunta8 = (TextView) findViewById(R.id.pregunta8);
+        preg8 = pregunta8.getText().toString();
         pregunta9 = (TextView) findViewById(R.id.pregunta9);
+        preg9 = pregunta9.getText().toString();
         pregunta10 = (TextView) findViewById(R.id.pregunta10);
+        preg10 = pregunta10.getText().toString();
         pregunta11 = (TextView) findViewById(R.id.pregunta11);
+        preg11 = pregunta11.getText().toString();
         preguntaSN1 = (TextView) findViewById(R.id.preguntaSiNo1);
+        pregSiNo1 = preguntaSN1.getText().toString();
         preguntaSN2 = (TextView) findViewById(R.id.preguntaSiNo2);
+        pregSiNo2 = preguntaSN2.getText().toString();
         preguntaSN3 = (TextView) findViewById(R.id.preguntaSiNo3);
+        pregSiNo3 = preguntaSN3.getText().toString();
 
         /* CARGAR EL ID DE LOS RADIOBUTTONS */
 
@@ -341,86 +355,111 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         dia = (EditText) findViewById(R.id.dia);
         diaRecogida = dia.getText().toString();
 
+        /* DATOS ESTADISTICOS */
+
+        /*sMucho1 = contadorMucho1 / (contadorMucho1 + contadorPoco1 + contadorNada1);
+        sMucho2 = contadorMucho2 / (contadorMucho2 + contadorPoco2 + contadorNada2);
+        sMucho3 = contadorMucho3 / (contadorMucho3 + contadorPoco3 + contadorNada3);
+        sMucho4 = contadorMucho4 / (contadorMucho4 + contadorPoco4 + contadorNada4);
+        sMucho5 = contadorMucho5 / (contadorMucho5 + contadorPoco5 + contadorNada5);
+        sMucho6 = contadorMucho6 / (contadorMucho6 + contadorPoco6 + contadorNada6);
+        sMucho7 = contadorMucho7 / (contadorMucho7 + contadorPoco7 + contadorNada7);
+        sMucho8 = contadorMucho8 / (contadorMucho8 + contadorPoco8 + contadorNada8);
+        sMucho9 = contadorMucho9 / (contadorMucho9 + contadorPoco9 + contadorNada9);
+        sMucho10 = contadorMucho10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
+        sMucho11 = contadorMucho11 / (contadorMucho11 + contadorPoco11 + contadorNada11);
+
+        sPoco1 = contadorPoco1 / (contadorMucho1 + contadorPoco1 + contadorNada1);
+        sPoco2 = contadorPoco2 / (contadorMucho2 + contadorPoco2 + contadorNada2);
+        sPoco3 = contadorPoco3 / (contadorMucho3 + contadorPoco3 + contadorNada3);
+        sPoco4 = contadorPoco4 / (contadorMucho4 + contadorPoco4 + contadorNada4);
+        sPoco5 = contadorPoco5 / (contadorMucho5 + contadorPoco5 + contadorNada5);
+        sPoco6 = contadorPoco6 / (contadorMucho6 + contadorPoco6 + contadorNada6);
+        sPoco7 = contadorPoco7 / (contadorMucho7 + contadorPoco7 + contadorNada7);
+        sPoco8 = contadorPoco8 / (contadorMucho8 + contadorPoco8 + contadorNada8);
+        sPoco9 = contadorPoco9 / (contadorMucho9 + contadorPoco9 + contadorNada9);
+        sPoco10 = contadorPoco10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
+        sPoco11 = contadorPoco11 / (contadorMucho11 + contadorPoco11 + contadorNada11);
+
+        sNada1 = contadorNada1 / (contadorMucho1 + contadorPoco1 + contadorNada1);
+        sNada2 = contadorNada2 / (contadorMucho2 + contadorPoco2 + contadorNada2);
+        sNada3 = contadorNada3 / (contadorMucho3 + contadorPoco3 + contadorNada3);
+        sNada4 = contadorNada4 / (contadorMucho4 + contadorPoco4 + contadorNada4);
+        sNada5 = contadorNada5 / (contadorMucho5 + contadorPoco5 + contadorNada5);
+        sNada6 = contadorNada6 / (contadorMucho6 + contadorPoco6 + contadorNada6);
+        sNada7 = contadorNada7 / (contadorMucho7 + contadorPoco7 + contadorNada7);
+        sNada8 = contadorNada8 / (contadorMucho8 + contadorPoco8 + contadorNada8);
+        sNada9 = contadorNada9 / (contadorMucho9 + contadorPoco9 + contadorNada9);
+        sNada10 = contadorNada10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
+        sNada11 = contadorNada11 / (contadorMucho11 + contadorPoco11 + contadorNada11);*/
+
     }
 
 
-    public String[] textos(TextView[] tvs){
-        String[] aux = new String[0];
-        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
-            aux[i] = tvs[i].getText().toString();
-        }
-        return aux;
-    }
 
-    public float[] statsMucho(int[]muchos, int[]pocos, int[]nadas){
-        float[] aux = new float[0];
-        int total;
-        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
-            total = muchos[i] + pocos[i] + nadas[i];
-            aux[i] = muchos[i]/total;
-        }
-        return aux;
-    }
 
-    public float[] statsPoco(int[]muchos, int[]pocos, int[]nadas){
-        float[] aux = new float[0];
-        int total;
-        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
-            total = muchos[i] + pocos[i] + nadas[i];
-            aux[i] = pocos[i]/total;
-        }
-        return aux;
-    }
-
-    public float[] statsNada(int[]muchos, int[]pocos, int[]nadas){
-        float[] aux = new float[0];
-        int total;
-        for(int i = 0; i < numeroPreguntasGenerales -1 ; i++){
-            total = muchos[i] + pocos[i] + nadas[i];
-            aux[i] = nadas[i]/total;
-        }
-        return aux;
-    }
 
     @Override
     public void onClick(View v) {
         DBManager manager = new DBManager(this);
-        textosGenerales = textos(preguntasGenerales);
-        textosZumos = textos(tipoZumos);
-        textosSINO = textos(preguntasSINO);
-        estadisticasMucho = statsMucho(muchos, pocos, nadas);
-        estadisticasPoco = statsPoco(muchos, pocos, nadas);
-        estadisticasNada = statsNada(muchos, pocos, nadas);
-        switch (v.getId()){
 
+        switch (v.getId()){
             case R.id.guardarEnDB:
                 /* INSERT DE LAS PREGUNTAS GENERALES */
-                manager.insertarPreguntasGenerales(textosGenerales,muchos,pocos,nadas);
+                manager.insertarPreguntasGenerales(preg1, contadorMucho1, contadorPoco1, contadorNada1);
+                manager.insertarPreguntasGenerales(preg2, contadorMucho2, contadorPoco2, contadorNada2);
+                manager.insertarPreguntasGenerales(preg3, contadorMucho3, contadorPoco3, contadorNada3);
+                manager.insertarPreguntasGenerales(preg4, contadorMucho4, contadorPoco4, contadorNada4);
+                manager.insertarPreguntasGenerales(preg5, contadorMucho5, contadorPoco5, contadorNada5);
+                manager.insertarPreguntasGenerales(preg6, contadorMucho6, contadorPoco6, contadorNada6);
+                manager.insertarPreguntasGenerales(preg7, contadorMucho7, contadorPoco7, contadorNada7);
+                manager.insertarPreguntasGenerales(preg8, contadorMucho8, contadorPoco8, contadorNada8);
+                manager.insertarPreguntasGenerales(preg9, contadorMucho9, contadorPoco9, contadorNada9);
+                manager.insertarPreguntasGenerales(preg10, contadorMucho10, contadorPoco10, contadorNada10);
+                manager.insertarPreguntasGenerales(preg11, contadorMucho11, contadorPoco11, contadorNada11);
                 /* INSERT DE LOS ZUMOS */
-                manager.insertarZumos(textosZumos,zumos);
+                manager.insertarZumos(clasico,contadorClasico);
+                manager.insertarZumos(antiox,contadorAntiox);
+                manager.insertarZumos(organico,contadorOrganico);
+                manager.insertarZumos(prisma,contadorPrisma);
+                manager.insertarZumos(rojo,contadorRojo);
+                manager.insertarZumos(verde,contadorVerde);
+                manager.insertarZumos(naranja,contadorNaranja);
                 /* INSERT DE LAS PREGUNTAS SI O NO */
                 if(si1.isChecked()){
-                    manager.insertarPreguntasSiNo(textosSINO[0],1,0);
+                    manager.insertarPreguntasSiNo(pregSiNo1,1,0);
                 }
                     else{
-                    manager.insertarPreguntasSiNo(textosSINO[0],0,1);
+                    manager.insertarPreguntasSiNo(pregSiNo1,0,1);
                 }
                 if(si2.isChecked()){
-                    manager.insertarPreguntasSiNo(textosSINO[1],1,0);
+                    manager.insertarPreguntasSiNo(pregSiNo2,1,0);
                 }
                 else{
-                    manager.insertarPreguntasSiNo(textosSINO[1],0,1);
+                    manager.insertarPreguntasSiNo(pregSiNo2,0,1);
                 }
                 if(si2.isChecked()){
-                    manager.insertarPreguntasSiNo(textosSINO[2],1,0);
+                    manager.insertarPreguntasSiNo(pregSiNo3,1,0);
                 }
                 else{
-                    manager.insertarPreguntasSiNo(textosSINO[2],0,1);
+                    manager.insertarPreguntasSiNo(pregSiNo3,0,1);
                 }
                 /* INSERT DE LOS DATOS DE LA AZAFATA */
                 manager.insertarDatosAzafata(nombreAzafata, nombreCentro, diaRecogida);
                 /* INSERT DE LOS DATOS ESTADISTICOS */
-                manager.insertarDatosEstadisticos(textosGenerales, estadisticasMucho, estadisticasPoco, estadisticasNada);
+                /*manager.insertarDatosEstadisticos(preg1, sMucho1, sPoco1, sNada1);
+                manager.insertarDatosEstadisticos(preg2, sMucho2, sPoco2, sNada2);
+                manager.insertarDatosEstadisticos(preg3, sMucho3, sPoco3, sNada3);
+                manager.insertarDatosEstadisticos(preg4, sMucho4, sPoco4, sNada4);
+                manager.insertarDatosEstadisticos(preg5, sMucho5, sPoco5, sNada5);
+                manager.insertarDatosEstadisticos(preg6, sMucho6, sPoco6, sNada6);
+                manager.insertarDatosEstadisticos(preg7, sMucho7, sPoco7, sNada7);
+                manager.insertarDatosEstadisticos(preg8, sMucho8, sPoco8, sNada8);
+                manager.insertarDatosEstadisticos(preg9, sMucho9, sPoco9, sNada9);
+                manager.insertarDatosEstadisticos(preg10, sMucho10, sPoco10, sNada10);
+                manager.insertarDatosEstadisticos(preg11, sMucho11, sPoco11, sNada11);*/
+                /* MOVER A LA SIGUIENTE VISTA */
+                startActivity(new Intent(Zumosol.this, FinalizarApp.class));
                 break;
 
             /* SUMAR CANTIDAD ZUMOS */
