@@ -349,11 +349,11 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         /* CARGAR DATOS DE LA AZAFATA Y DEL CENTRO */
 
         azafata = (EditText) findViewById(R.id.azafata);
-        nombreAzafata = azafata.getText().toString();
+        //nombreAzafata = azafata.getText().toString();
         centro = (EditText) findViewById(R.id.centro);
-        nombreCentro = centro.getText().toString();
+        //nombreCentro = centro.getText().toString();
         dia = (EditText) findViewById(R.id.dia);
-        diaRecogida = dia.getText().toString();
+        //diaRecogida = dia.getText().toString();
 
         /* DATOS ESTADISTICOS */
 
@@ -393,6 +393,9 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         sNada10 = contadorNada10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
         sNada11 = contadorNada11 / (contadorMucho11 + contadorPoco11 + contadorNada11);*/
 
+        Button guardar = (Button) findViewById(R.id.guardarEnDB);
+        guardar.setOnClickListener(this);
+
     }
 
 
@@ -403,49 +406,51 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         DBManager manager = new DBManager(this);
 
-        switch (v.getId()){
-            case R.id.guardarEnDB:
-                /* INSERT DE LAS PREGUNTAS GENERALES */
-                manager.insertarPreguntasGenerales(preg1, contadorMucho1, contadorPoco1, contadorNada1);
-                manager.insertarPreguntasGenerales(preg2, contadorMucho2, contadorPoco2, contadorNada2);
-                manager.insertarPreguntasGenerales(preg3, contadorMucho3, contadorPoco3, contadorNada3);
-                manager.insertarPreguntasGenerales(preg4, contadorMucho4, contadorPoco4, contadorNada4);
-                manager.insertarPreguntasGenerales(preg5, contadorMucho5, contadorPoco5, contadorNada5);
-                manager.insertarPreguntasGenerales(preg6, contadorMucho6, contadorPoco6, contadorNada6);
-                manager.insertarPreguntasGenerales(preg7, contadorMucho7, contadorPoco7, contadorNada7);
-                manager.insertarPreguntasGenerales(preg8, contadorMucho8, contadorPoco8, contadorNada8);
-                manager.insertarPreguntasGenerales(preg9, contadorMucho9, contadorPoco9, contadorNada9);
-                manager.insertarPreguntasGenerales(preg10, contadorMucho10, contadorPoco10, contadorNada10);
-                manager.insertarPreguntasGenerales(preg11, contadorMucho11, contadorPoco11, contadorNada11);
+        if (v.getId()==R.id.guardarEnDB){
+            /* INSERT DE LAS PREGUNTAS GENERALES */
+            manager.insertarPreguntasGenerales(preg1, contadorMucho1, contadorPoco1, contadorNada1);
+            manager.insertarPreguntasGenerales(preg2, contadorMucho2, contadorPoco2, contadorNada2);
+            manager.insertarPreguntasGenerales(preg3, contadorMucho3, contadorPoco3, contadorNada3);
+            manager.insertarPreguntasGenerales(preg4, contadorMucho4, contadorPoco4, contadorNada4);
+            manager.insertarPreguntasGenerales(preg5, contadorMucho5, contadorPoco5, contadorNada5);
+            manager.insertarPreguntasGenerales(preg6, contadorMucho6, contadorPoco6, contadorNada6);
+            manager.insertarPreguntasGenerales(preg7, contadorMucho7, contadorPoco7, contadorNada7);
+            manager.insertarPreguntasGenerales(preg8, contadorMucho8, contadorPoco8, contadorNada8);
+            manager.insertarPreguntasGenerales(preg9, contadorMucho9, contadorPoco9, contadorNada9);
+            manager.insertarPreguntasGenerales(preg10, contadorMucho10, contadorPoco10, contadorNada10);
+            manager.insertarPreguntasGenerales(preg11, contadorMucho11, contadorPoco11, contadorNada11);
                 /* INSERT DE LOS ZUMOS */
-                manager.insertarZumos(clasico,contadorClasico);
-                manager.insertarZumos(antiox,contadorAntiox);
-                manager.insertarZumos(organico,contadorOrganico);
-                manager.insertarZumos(prisma,contadorPrisma);
-                manager.insertarZumos(rojo,contadorRojo);
-                manager.insertarZumos(verde,contadorVerde);
-                manager.insertarZumos(naranja,contadorNaranja);
+            manager.insertarZumos(clasico, contadorClasico);
+            manager.insertarZumos(antiox, contadorAntiox);
+            manager.insertarZumos(organico, contadorOrganico);
+            manager.insertarZumos(prisma, contadorPrisma);
+            manager.insertarZumos(rojo, contadorRojo);
+            manager.insertarZumos(verde, contadorVerde);
+            manager.insertarZumos(naranja, contadorNaranja);
                 /* INSERT DE LAS PREGUNTAS SI O NO */
-                if(si1.isChecked()){
-                    manager.insertarPreguntasSiNo(pregSiNo1,1,0);
-                }
-                    else{
-                    manager.insertarPreguntasSiNo(pregSiNo1,0,1);
-                }
-                if(si2.isChecked()){
-                    manager.insertarPreguntasSiNo(pregSiNo2,1,0);
-                }
-                else{
-                    manager.insertarPreguntasSiNo(pregSiNo2,0,1);
-                }
-                if(si2.isChecked()){
-                    manager.insertarPreguntasSiNo(pregSiNo3,1,0);
-                }
-                else{
-                    manager.insertarPreguntasSiNo(pregSiNo3,0,1);
-                }
+            if(si1.isChecked()){
+                manager.insertarPreguntasSiNo(pregSiNo1,1,0);
+            }
+            else{
+                manager.insertarPreguntasSiNo(pregSiNo1,0,1);
+            }
+            if(si2.isChecked()){
+                manager.insertarPreguntasSiNo(pregSiNo2,1,0);
+            }
+            else{
+                manager.insertarPreguntasSiNo(pregSiNo2,0,1);
+            }
+            if(si2.isChecked()){
+                manager.insertarPreguntasSiNo(pregSiNo3,1,0);
+            }
+            else{
+                manager.insertarPreguntasSiNo(pregSiNo3,0,1);
+            }
                 /* INSERT DE LOS DATOS DE LA AZAFATA */
-                manager.insertarDatosAzafata(nombreAzafata, nombreCentro, diaRecogida);
+            nombreAzafata = azafata.getText().toString();
+            nombreCentro = centro.getText().toString();
+            diaRecogida = dia.getText().toString();
+            manager.insertarDatosAzafata(nombreAzafata, nombreCentro, diaRecogida);
                 /* INSERT DE LOS DATOS ESTADISTICOS */
                 /*manager.insertarDatosEstadisticos(preg1, sMucho1, sPoco1, sNada1);
                 manager.insertarDatosEstadisticos(preg2, sMucho2, sPoco2, sNada2);
@@ -459,431 +464,427 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                 manager.insertarDatosEstadisticos(preg10, sMucho10, sPoco10, sNada10);
                 manager.insertarDatosEstadisticos(preg11, sMucho11, sPoco11, sNada11);*/
                 /* MOVER A LA SIGUIENTE VISTA */
-                startActivity(new Intent(Zumosol.this, FinalizarApp.class));
-                break;
+            startActivity(new Intent(Zumosol.this, FinalizarApp.class));
+            finish();
+        }
+        else {
+            switch (v.getId()) {
 
             /* SUMAR CANTIDAD ZUMOS */
-
-            case R.id.sumClasico:
-                contadorClasico++;
-                cantidadClasico.setText(Integer.toString(contadorClasico));
-                break;
-            case R.id.sumAntiox:
-                contadorAntiox++;
-                cantidadAntiox.setText(Integer.toString(contadorAntiox));
-                break;
-            case R.id.sumOrganico:
-                contadorOrganico++;
-                cantidadOrganico.setText(Integer.toString(contadorOrganico));
-                break;
-            case R.id.sumPrisma:
-                contadorPrisma++;
-                cantidadPrisma.setText(Integer.toString(contadorPrisma));
-                break;
-            case R.id.sumRojo:
-                contadorRojo++;
-                cantidadRojo.setText(Integer.toString(contadorRojo));
-                break;
-            case R.id.sumVerde:
-                contadorVerde++;
-                cantidadVerde.setText(Integer.toString(contadorVerde));
-                break;
-            case R.id.sumNaranja:
-                contadorNaranja++;
-                cantidadNaranja.setText(Integer.toString(contadorNaranja));
-                break;
+                case R.id.sumClasico:
+                    contadorClasico++;
+                    cantidadClasico.setText(Integer.toString(contadorClasico));
+                    break;
+                case R.id.sumAntiox:
+                    contadorAntiox++;
+                    cantidadAntiox.setText(Integer.toString(contadorAntiox));
+                    break;
+                case R.id.sumOrganico:
+                    contadorOrganico++;
+                    cantidadOrganico.setText(Integer.toString(contadorOrganico));
+                    break;
+                case R.id.sumPrisma:
+                    contadorPrisma++;
+                    cantidadPrisma.setText(Integer.toString(contadorPrisma));
+                    break;
+                case R.id.sumRojo:
+                    contadorRojo++;
+                    cantidadRojo.setText(Integer.toString(contadorRojo));
+                    break;
+                case R.id.sumVerde:
+                    contadorVerde++;
+                    cantidadVerde.setText(Integer.toString(contadorVerde));
+                    break;
+                case R.id.sumNaranja:
+                    contadorNaranja++;
+                    cantidadNaranja.setText(Integer.toString(contadorNaranja));
+                    break;
 
             /* RESTAR CANTIDAD DE ZUMOS */
-
-            case R.id.resClasico:
-                if(contadorClasico > 0) {
-                    contadorClasico--;
-                    cantidadClasico.setText(Integer.toString(contadorClasico));
-                }
-                break;
-            case R.id.resAntiox:
-                if(contadorAntiox > 0) {
-                    contadorAntiox--;
-                    cantidadAntiox.setText(Integer.toString(contadorAntiox));
-                }
-                break;
-            case R.id.resOrganico:
-                if(contadorOrganico > 0) {
-                    contadorOrganico--;
-                    cantidadOrganico.setText(Integer.toString(contadorOrganico));
-                }
-                break;
-            case R.id.resPrisma:
-                if(contadorPrisma > 0) {
-                    contadorPrisma--;
-                    cantidadPrisma.setText(Integer.toString(contadorPrisma));
-                }
-                break;
-            case R.id.resRojo:
-                if(contadorRojo > 0) {
-                    contadorRojo--;
-                    cantidadRojo.setText(Integer.toString(contadorRojo));
-                }
-                break;
-            case R.id.resVerde:
-                if(contadorVerde > 0) {
-                    contadorVerde--;
-                    cantidadVerde.setText(Integer.toString(contadorVerde));
-                }
-                break;
-            case R.id.resNaranja:
-                if(contadorNaranja > 0) {
-                    contadorNaranja--;
-                    cantidadNaranja.setText(Integer.toString(contadorNaranja));
-                }
-                break;
+                case R.id.resClasico:
+                    if (contadorClasico > 0) {
+                        contadorClasico--;
+                        cantidadClasico.setText(Integer.toString(contadorClasico));
+                    }
+                    break;
+                case R.id.resAntiox:
+                    if (contadorAntiox > 0) {
+                        contadorAntiox--;
+                        cantidadAntiox.setText(Integer.toString(contadorAntiox));
+                    }
+                    break;
+                case R.id.resOrganico:
+                    if (contadorOrganico > 0) {
+                        contadorOrganico--;
+                        cantidadOrganico.setText(Integer.toString(contadorOrganico));
+                    }
+                    break;
+                case R.id.resPrisma:
+                    if (contadorPrisma > 0) {
+                        contadorPrisma--;
+                        cantidadPrisma.setText(Integer.toString(contadorPrisma));
+                    }
+                    break;
+                case R.id.resRojo:
+                    if (contadorRojo > 0) {
+                        contadorRojo--;
+                        cantidadRojo.setText(Integer.toString(contadorRojo));
+                    }
+                    break;
+                case R.id.resVerde:
+                    if (contadorVerde > 0) {
+                        contadorVerde--;
+                        cantidadVerde.setText(Integer.toString(contadorVerde));
+                    }
+                    break;
+                case R.id.resNaranja:
+                    if (contadorNaranja > 0) {
+                        contadorNaranja--;
+                        cantidadNaranja.setText(Integer.toString(contadorNaranja));
+                    }
+                    break;
 
             /* SUMA CANTIDAD A MUCHOS DE PREGUNTAS */
-
-            case R.id.sumadorMuchoPregunta1:
-                contadorMucho1++;
-                cantidadMucho1.setText(Integer.toString(contadorMucho1));
-                break;
-            case R.id.sumadorMuchoPregunta2:
-                contadorMucho2++;
-                cantidadMucho2.setText(Integer.toString(contadorMucho2));
-                break;
-            case R.id.sumadorMuchoPregunta3:
-                contadorMucho3++;
-                cantidadMucho3.setText(Integer.toString(contadorMucho3));
-                break;
-            case R.id.sumadorMuchoPregunta4:
-                contadorMucho4++;
-                cantidadMucho4.setText(Integer.toString(contadorMucho4));
-                break;
-            case R.id.sumadorMuchoPregunta5:
-                contadorMucho5++;
-                cantidadMucho5.setText(Integer.toString(contadorMucho5));
-                break;
-            case R.id.sumadorMuchoPregunta6:
-                contadorMucho6++;
-                cantidadMucho6.setText(Integer.toString(contadorMucho6));
-                break;
-            case R.id.sumadorMuchoPregunta7:
-                contadorMucho7++;
-                cantidadMucho7.setText(Integer.toString(contadorMucho7));
-                break;
-            case R.id.sumadorMuchoPregunta8:
-                contadorMucho8++;
-                cantidadMucho8.setText(Integer.toString(contadorMucho8));
-                break;
-            case R.id.sumadorMuchoPregunta9:
-                contadorMucho9++;
-                cantidadMucho9.setText(Integer.toString(contadorMucho9));
-                break;
-            case R.id.sumadorMuchoPregunta10:
-                contadorMucho10++;
-                cantidadMucho10.setText(Integer.toString(contadorMucho10));
-                break;
-            case R.id.sumadorMuchoPregunta11:
-                contadorMucho11++;
-                cantidadMucho11.setText(Integer.toString(contadorMucho11));
-                break;
+                case R.id.sumadorMuchoPregunta1:
+                    contadorMucho1++;
+                    cantidadMucho1.setText(Integer.toString(contadorMucho1));
+                    break;
+                case R.id.sumadorMuchoPregunta2:
+                    contadorMucho2++;
+                    cantidadMucho2.setText(Integer.toString(contadorMucho2));
+                    break;
+                case R.id.sumadorMuchoPregunta3:
+                    contadorMucho3++;
+                    cantidadMucho3.setText(Integer.toString(contadorMucho3));
+                    break;
+                case R.id.sumadorMuchoPregunta4:
+                    contadorMucho4++;
+                    cantidadMucho4.setText(Integer.toString(contadorMucho4));
+                    break;
+                case R.id.sumadorMuchoPregunta5:
+                    contadorMucho5++;
+                    cantidadMucho5.setText(Integer.toString(contadorMucho5));
+                    break;
+                case R.id.sumadorMuchoPregunta6:
+                    contadorMucho6++;
+                    cantidadMucho6.setText(Integer.toString(contadorMucho6));
+                    break;
+                case R.id.sumadorMuchoPregunta7:
+                    contadorMucho7++;
+                    cantidadMucho7.setText(Integer.toString(contadorMucho7));
+                    break;
+                case R.id.sumadorMuchoPregunta8:
+                    contadorMucho8++;
+                    cantidadMucho8.setText(Integer.toString(contadorMucho8));
+                    break;
+                case R.id.sumadorMuchoPregunta9:
+                    contadorMucho9++;
+                    cantidadMucho9.setText(Integer.toString(contadorMucho9));
+                    break;
+                case R.id.sumadorMuchoPregunta10:
+                    contadorMucho10++;
+                    cantidadMucho10.setText(Integer.toString(contadorMucho10));
+                    break;
+                case R.id.sumadorMuchoPregunta11:
+                    contadorMucho11++;
+                    cantidadMucho11.setText(Integer.toString(contadorMucho11));
+                    break;
 
             /* RESTA CANTIDAD A MUCHOS DE PREGUNTAS */
-
-            case R.id.restadorMuchoPregunta1:
-                if(contadorMucho1 > 0) {
-                    contadorMucho1--;
-                    cantidadMucho1.setText(Integer.toString(contadorMucho1));
-                }
-                break;
-            case R.id.restadorMuchoPregunta2:
-                if(contadorMucho2 > 0) {
-                    contadorMucho2--;
-                    cantidadMucho2.setText(Integer.toString(contadorMucho2));
-                }
-                break;
-            case R.id.restadorMuchoPregunta3:
-                if(contadorMucho3 > 0) {
-                    contadorMucho3--;
-                    cantidadMucho3.setText(Integer.toString(contadorMucho3));
-                }
-                break;
-            case R.id.restadorMuchoPregunta4:
-                if(contadorMucho4 > 0) {
-                    contadorMucho4--;
-                    cantidadMucho4.setText(Integer.toString(contadorMucho4));
-                }
-                break;
-            case R.id.restadorMuchoPregunta5:
-                if(contadorMucho5 > 0) {
-                    contadorMucho5--;
-                    cantidadMucho5.setText(Integer.toString(contadorMucho5));
-                }
-                break;
-            case R.id.restadorMuchoPregunta6:
-                if(contadorMucho6 > 0) {
-                    contadorMucho6--;
-                    cantidadMucho6.setText(Integer.toString(contadorMucho6));
-                }
-                break;
-            case R.id.restadorMuchoPregunta7:
-                if(contadorMucho7 > 0) {
-                    contadorMucho7--;
-                    cantidadMucho7.setText(Integer.toString(contadorMucho7));
-                }
-                break;
-            case R.id.restadorMuchoPregunta8:
-                if(contadorMucho8 > 0) {
-                    contadorMucho8--;
-                    cantidadMucho8.setText(Integer.toString(contadorMucho8));
-                }
-                break;
-            case R.id.restadorMuchoPregunta9:
-                if(contadorMucho9 > 0) {
-                    contadorMucho9--;
-                    cantidadMucho9.setText(Integer.toString(contadorMucho9));
-                }
-                break;
-            case R.id.restadorMuchoPregunta10:
-                if(contadorMucho10 > 0) {
-                    contadorMucho10--;
-                    cantidadMucho10.setText(Integer.toString(contadorMucho10));
-                }
-                break;
-            case R.id.restadorMuchoPregunta11:
-                if(contadorMucho11 > 0) {
-                    contadorMucho11--;
-                    cantidadMucho11.setText(Integer.toString(contadorMucho11));
-                }
-                break;
+                case R.id.restadorMuchoPregunta1:
+                    if (contadorMucho1 > 0) {
+                        contadorMucho1--;
+                        cantidadMucho1.setText(Integer.toString(contadorMucho1));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta2:
+                    if (contadorMucho2 > 0) {
+                        contadorMucho2--;
+                        cantidadMucho2.setText(Integer.toString(contadorMucho2));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta3:
+                    if (contadorMucho3 > 0) {
+                        contadorMucho3--;
+                        cantidadMucho3.setText(Integer.toString(contadorMucho3));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta4:
+                    if (contadorMucho4 > 0) {
+                        contadorMucho4--;
+                        cantidadMucho4.setText(Integer.toString(contadorMucho4));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta5:
+                    if (contadorMucho5 > 0) {
+                        contadorMucho5--;
+                        cantidadMucho5.setText(Integer.toString(contadorMucho5));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta6:
+                    if (contadorMucho6 > 0) {
+                        contadorMucho6--;
+                        cantidadMucho6.setText(Integer.toString(contadorMucho6));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta7:
+                    if (contadorMucho7 > 0) {
+                        contadorMucho7--;
+                        cantidadMucho7.setText(Integer.toString(contadorMucho7));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta8:
+                    if (contadorMucho8 > 0) {
+                        contadorMucho8--;
+                        cantidadMucho8.setText(Integer.toString(contadorMucho8));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta9:
+                    if (contadorMucho9 > 0) {
+                        contadorMucho9--;
+                        cantidadMucho9.setText(Integer.toString(contadorMucho9));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta10:
+                    if (contadorMucho10 > 0) {
+                        contadorMucho10--;
+                        cantidadMucho10.setText(Integer.toString(contadorMucho10));
+                    }
+                    break;
+                case R.id.restadorMuchoPregunta11:
+                    if (contadorMucho11 > 0) {
+                        contadorMucho11--;
+                        cantidadMucho11.setText(Integer.toString(contadorMucho11));
+                    }
+                    break;
 
             /* SUMA CANTIDAD A POCOS DE PREGUNTAS */
-
-            case R.id.sumadorPocoPregunta1:
-                contadorPoco1++;
-                cantidadPoco1.setText(Integer.toString(contadorPoco1));
-                break;
-            case R.id.sumadorPocoPregunta2:
-                contadorPoco2++;
-                cantidadPoco2.setText(Integer.toString(contadorPoco2));
-                break;
-            case R.id.sumadorPocoPregunta3:
-                contadorPoco3++;
-                cantidadPoco3.setText(Integer.toString(contadorPoco3));
-                break;
-            case R.id.sumadorPocoPregunta4:
-                contadorPoco4++;
-                cantidadPoco4.setText(Integer.toString(contadorPoco4));
-                break;
-            case R.id.sumadorPocoPregunta5:
-                contadorPoco5++;
-                cantidadPoco5.setText(Integer.toString(contadorPoco5));
-                break;
-            case R.id.sumadorPocoPregunta6:
-                contadorPoco6++;
-                cantidadPoco6.setText(Integer.toString(contadorPoco6));
-                break;
-            case R.id.sumadorPocoPregunta7:
-                contadorPoco7++;
-                cantidadPoco7.setText(Integer.toString(contadorPoco7));
-                break;
-            case R.id.sumadorPocoPregunta8:
-                contadorPoco8++;
-                cantidadPoco8.setText(Integer.toString(contadorPoco8));
-                break;
-            case R.id.sumadorPocoPregunta9:
-                contadorPoco9++;
-                cantidadPoco9.setText(Integer.toString(contadorPoco9));
-                break;
-            case R.id.sumadorPocoPregunta10:
-                contadorPoco10++;
-                cantidadPoco10.setText(Integer.toString(contadorPoco10));
-                break;
-            case R.id.sumadorPocoPregunta11:
-                contadorPoco11++;
-                cantidadPoco11.setText(Integer.toString(contadorPoco11));
-                break;
+                case R.id.sumadorPocoPregunta1:
+                    contadorPoco1++;
+                    cantidadPoco1.setText(Integer.toString(contadorPoco1));
+                    break;
+                case R.id.sumadorPocoPregunta2:
+                    contadorPoco2++;
+                    cantidadPoco2.setText(Integer.toString(contadorPoco2));
+                    break;
+                case R.id.sumadorPocoPregunta3:
+                    contadorPoco3++;
+                    cantidadPoco3.setText(Integer.toString(contadorPoco3));
+                    break;
+                case R.id.sumadorPocoPregunta4:
+                    contadorPoco4++;
+                    cantidadPoco4.setText(Integer.toString(contadorPoco4));
+                    break;
+                case R.id.sumadorPocoPregunta5:
+                    contadorPoco5++;
+                    cantidadPoco5.setText(Integer.toString(contadorPoco5));
+                    break;
+                case R.id.sumadorPocoPregunta6:
+                    contadorPoco6++;
+                    cantidadPoco6.setText(Integer.toString(contadorPoco6));
+                    break;
+                case R.id.sumadorPocoPregunta7:
+                    contadorPoco7++;
+                    cantidadPoco7.setText(Integer.toString(contadorPoco7));
+                    break;
+                case R.id.sumadorPocoPregunta8:
+                    contadorPoco8++;
+                    cantidadPoco8.setText(Integer.toString(contadorPoco8));
+                    break;
+                case R.id.sumadorPocoPregunta9:
+                    contadorPoco9++;
+                    cantidadPoco9.setText(Integer.toString(contadorPoco9));
+                    break;
+                case R.id.sumadorPocoPregunta10:
+                    contadorPoco10++;
+                    cantidadPoco10.setText(Integer.toString(contadorPoco10));
+                    break;
+                case R.id.sumadorPocoPregunta11:
+                    contadorPoco11++;
+                    cantidadPoco11.setText(Integer.toString(contadorPoco11));
+                    break;
 
             /* RESTA CANTIDAD A POCOS DE PREGUNTAS */
-
-            case R.id.restadorPocoPregunta1:
-                if(contadorPoco1 > 0) {
-                    contadorPoco1--;
-                    cantidadPoco1.setText(Integer.toString(contadorPoco1));
-                }
-                break;
-            case R.id.restadorPocoPregunta2:
-                if(contadorPoco2 > 0) {
-                    contadorPoco2--;
-                    cantidadPoco2.setText(Integer.toString(contadorPoco2));
-                }
-                break;
-            case R.id.restadorPocoPregunta3:
-                if(contadorPoco3 > 0) {
-                    contadorPoco3--;
-                    cantidadPoco3.setText(Integer.toString(contadorPoco3));
-                }
-            case R.id.restadorPocoPregunta4:
-                if(contadorPoco4 > 0) {
-                    contadorPoco4--;
-                    cantidadPoco4.setText(Integer.toString(contadorPoco4));
-                }
-                break;
-            case R.id.restadorPocoPregunta5:
-                if(contadorPoco5 > 0) {
-                    contadorPoco5--;
-                    cantidadPoco5.setText(Integer.toString(contadorPoco5));
-                }
-                break;
-            case R.id.restadorPocoPregunta6:
-                if(contadorPoco6 > 0) {
-                    contadorPoco6--;
-                    cantidadPoco6.setText(Integer.toString(contadorPoco6));
-                }
-                break;
-            case R.id.restadorPocoPregunta7:
-                if(contadorPoco7 > 0) {
-                    contadorPoco7--;
-                    cantidadPoco7.setText(Integer.toString(contadorPoco7));
-                }
-                break;
-            case R.id.restadorPocoPregunta8:
-                if(contadorPoco8 > 0) {
-                    contadorPoco8--;
-                    cantidadPoco8.setText(Integer.toString(contadorPoco8));
-                }
-                break;
-            case R.id.restadorPocoPregunta9:
-                if(contadorPoco9 > 0) {
-                    contadorPoco9--;
-                    cantidadPoco9.setText(Integer.toString(contadorPoco9));
-                }
-                break;
-            case R.id.restadorPocoPregunta10:
-                if(contadorPoco10 > 0) {
-                    contadorPoco10--;
-                    cantidadPoco10.setText(Integer.toString(contadorPoco10));
-                }
-                break;
-            case R.id.restadorPocoPregunta11:
-                if(contadorPoco11 > 0) {
-                    contadorPoco11--;
-                    cantidadPoco11.setText(Integer.toString(contadorPoco11));
-                }
-                break;
+                case R.id.restadorPocoPregunta1:
+                    if (contadorPoco1 > 0) {
+                        contadorPoco1--;
+                        cantidadPoco1.setText(Integer.toString(contadorPoco1));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta2:
+                    if (contadorPoco2 > 0) {
+                        contadorPoco2--;
+                        cantidadPoco2.setText(Integer.toString(contadorPoco2));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta3:
+                    if (contadorPoco3 > 0) {
+                        contadorPoco3--;
+                        cantidadPoco3.setText(Integer.toString(contadorPoco3));
+                    }
+                case R.id.restadorPocoPregunta4:
+                    if (contadorPoco4 > 0) {
+                        contadorPoco4--;
+                        cantidadPoco4.setText(Integer.toString(contadorPoco4));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta5:
+                    if (contadorPoco5 > 0) {
+                        contadorPoco5--;
+                        cantidadPoco5.setText(Integer.toString(contadorPoco5));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta6:
+                    if (contadorPoco6 > 0) {
+                        contadorPoco6--;
+                        cantidadPoco6.setText(Integer.toString(contadorPoco6));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta7:
+                    if (contadorPoco7 > 0) {
+                        contadorPoco7--;
+                        cantidadPoco7.setText(Integer.toString(contadorPoco7));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta8:
+                    if (contadorPoco8 > 0) {
+                        contadorPoco8--;
+                        cantidadPoco8.setText(Integer.toString(contadorPoco8));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta9:
+                    if (contadorPoco9 > 0) {
+                        contadorPoco9--;
+                        cantidadPoco9.setText(Integer.toString(contadorPoco9));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta10:
+                    if (contadorPoco10 > 0) {
+                        contadorPoco10--;
+                        cantidadPoco10.setText(Integer.toString(contadorPoco10));
+                    }
+                    break;
+                case R.id.restadorPocoPregunta11:
+                    if (contadorPoco11 > 0) {
+                        contadorPoco11--;
+                        cantidadPoco11.setText(Integer.toString(contadorPoco11));
+                    }
+                    break;
 
             /* SUMA CANTIDAD A NADA DE PREGUNTAS */
-
-            case R.id.sumadorNadaPregunta1:
-                contadorNada1++;
-                cantidadNada1.setText(Integer.toString(contadorNada1));
-                break;
-            case R.id.sumadorNadaPregunta2:
-                contadorNada2++;
-                cantidadNada2.setText(Integer.toString(contadorNada2));
-                break;
-            case R.id.sumadorNadaPregunta3:
-                contadorNada3++;
-                cantidadNada3.setText(Integer.toString(contadorNada3));
-                break;
-            case R.id.sumadorNadaPregunta4:
-                contadorNada4++;
-                cantidadNada4.setText(Integer.toString(contadorNada4));
-                break;
-            case R.id.sumadorNadaPregunta5:
-                contadorNada5++;
-                cantidadNada5.setText(Integer.toString(contadorNada5));
-                break;
-            case R.id.sumadorNadaPregunta6:
-                contadorNada6++;
-                cantidadNada6.setText(Integer.toString(contadorNada6));
-                break;
-            case R.id.sumadorNadaPregunta7:
-                contadorNada7++;
-                cantidadNada7.setText(Integer.toString(contadorNada7));
-                break;
-            case R.id.sumadorNadaPregunta8:
-                contadorNada8++;
-                cantidadNada8.setText(Integer.toString(contadorNada8));
-                break;
-            case R.id.sumadorNadaPregunta9:
-                contadorNada9++;
-                cantidadNada9.setText(Integer.toString(contadorNada9));
-                break;
-            case R.id.sumadorNadaPregunta10:
-                contadorNada10++;
-                cantidadNada10.setText(Integer.toString(contadorNada10));
-                break;
-            case R.id.sumadorNadaPregunta11:
-                contadorNada11++;
-                cantidadNada11.setText(Integer.toString(contadorNada11));
-                break;
+                case R.id.sumadorNadaPregunta1:
+                    contadorNada1++;
+                    cantidadNada1.setText(Integer.toString(contadorNada1));
+                    break;
+                case R.id.sumadorNadaPregunta2:
+                    contadorNada2++;
+                    cantidadNada2.setText(Integer.toString(contadorNada2));
+                    break;
+                case R.id.sumadorNadaPregunta3:
+                    contadorNada3++;
+                    cantidadNada3.setText(Integer.toString(contadorNada3));
+                    break;
+                case R.id.sumadorNadaPregunta4:
+                    contadorNada4++;
+                    cantidadNada4.setText(Integer.toString(contadorNada4));
+                    break;
+                case R.id.sumadorNadaPregunta5:
+                    contadorNada5++;
+                    cantidadNada5.setText(Integer.toString(contadorNada5));
+                    break;
+                case R.id.sumadorNadaPregunta6:
+                    contadorNada6++;
+                    cantidadNada6.setText(Integer.toString(contadorNada6));
+                    break;
+                case R.id.sumadorNadaPregunta7:
+                    contadorNada7++;
+                    cantidadNada7.setText(Integer.toString(contadorNada7));
+                    break;
+                case R.id.sumadorNadaPregunta8:
+                    contadorNada8++;
+                    cantidadNada8.setText(Integer.toString(contadorNada8));
+                    break;
+                case R.id.sumadorNadaPregunta9:
+                    contadorNada9++;
+                    cantidadNada9.setText(Integer.toString(contadorNada9));
+                    break;
+                case R.id.sumadorNadaPregunta10:
+                    contadorNada10++;
+                    cantidadNada10.setText(Integer.toString(contadorNada10));
+                    break;
+                case R.id.sumadorNadaPregunta11:
+                    contadorNada11++;
+                    cantidadNada11.setText(Integer.toString(contadorNada11));
+                    break;
 
             /* RESTA CANTIDAD A POCOS DE PREGUNTAS */
-
-            case R.id.restadorNadaPregunta1:
-                if(contadorNada1 > 0) {
-                    contadorNada1--;
-                    cantidadNada1.setText(Integer.toString(contadorNada1));
-                }
-                break;
-            case R.id.restadorNadaPregunta2:
-                if(contadorNada2 > 0) {
-                    contadorNada2--;
-                    cantidadNada2.setText(Integer.toString(contadorNada2));
-                }
-                break;
-            case R.id.restadorNadaPregunta3:
-                if(contadorNada3 > 0) {
-                    contadorNada3--;
-                    cantidadNada3.setText(Integer.toString(contadorNada3));
-                }
-                break;
-            case R.id.restadorNadaPregunta4:
-                if(contadorNada4 > 0) {
-                    contadorNada4--;
-                    cantidadNada4.setText(Integer.toString(contadorNada4));
-                }
-                break;
-            case R.id.restadorNadaPregunta5:
-                if(contadorNada5 > 0) {
-                    contadorNada5--;
-                    cantidadNada5.setText(Integer.toString(contadorNada5));
-                }
-                break;
-            case R.id.restadorNadaPregunta6:
-                if(contadorNada6 > 0) {
-                    contadorNada6--;
-                    cantidadNada6.setText(Integer.toString(contadorNada6));
-                }
-                break;
-            case R.id.restadorNadaPregunta7:
-                if(contadorNada7 > 0) {
-                    contadorNada7--;
-                    cantidadNada7.setText(Integer.toString(contadorNada7));
-                }
-                break;
-            case R.id.restadorNadaPregunta8:
-                if(contadorNada8 > 0) {
-                    contadorNada8--;
-                    cantidadNada8.setText(Integer.toString(contadorNada8));
-                }
-                break;
-            case R.id.restadorNadaPregunta9:
-                if(contadorNada9 > 0) {
-                    contadorNada9--;
-                    cantidadNada9.setText(Integer.toString(contadorNada9));
-                }
-                break;
-            case R.id.restadorNadaPregunta10:
-                if(contadorNada10 > 0) {
-                    contadorNada10--;
-                    cantidadNada10.setText(Integer.toString(contadorNada10));
-                }
-                break;
-            case R.id.restadorNadaPregunta11:
-                if(contadorNada11 > 0) {
-                    contadorNada11--;
-                    cantidadNada11.setText(Integer.toString(contadorNada11));
-                }
-                break;
+                case R.id.restadorNadaPregunta1:
+                    if (contadorNada1 > 0) {
+                        contadorNada1--;
+                        cantidadNada1.setText(Integer.toString(contadorNada1));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta2:
+                    if (contadorNada2 > 0) {
+                        contadorNada2--;
+                        cantidadNada2.setText(Integer.toString(contadorNada2));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta3:
+                    if (contadorNada3 > 0) {
+                        contadorNada3--;
+                        cantidadNada3.setText(Integer.toString(contadorNada3));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta4:
+                    if (contadorNada4 > 0) {
+                        contadorNada4--;
+                        cantidadNada4.setText(Integer.toString(contadorNada4));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta5:
+                    if (contadorNada5 > 0) {
+                        contadorNada5--;
+                        cantidadNada5.setText(Integer.toString(contadorNada5));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta6:
+                    if (contadorNada6 > 0) {
+                        contadorNada6--;
+                        cantidadNada6.setText(Integer.toString(contadorNada6));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta7:
+                    if (contadorNada7 > 0) {
+                        contadorNada7--;
+                        cantidadNada7.setText(Integer.toString(contadorNada7));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta8:
+                    if (contadorNada8 > 0) {
+                        contadorNada8--;
+                        cantidadNada8.setText(Integer.toString(contadorNada8));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta9:
+                    if (contadorNada9 > 0) {
+                        contadorNada9--;
+                        cantidadNada9.setText(Integer.toString(contadorNada9));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta10:
+                    if (contadorNada10 > 0) {
+                        contadorNada10--;
+                        cantidadNada10.setText(Integer.toString(contadorNada10));
+                    }
+                    break;
+                case R.id.restadorNadaPregunta11:
+                    if (contadorNada11 > 0) {
+                        contadorNada11--;
+                        cantidadNada11.setText(Integer.toString(contadorNada11));
+                    }
+                    break;
+            }
         }
     }
 }

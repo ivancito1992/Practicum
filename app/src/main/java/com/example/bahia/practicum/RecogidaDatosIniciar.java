@@ -22,6 +22,7 @@ public class RecogidaDatosIniciar extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RecogidaDatosIniciar.this, Zumosol.class));
+                finish();
             }
         });
     }

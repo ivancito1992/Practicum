@@ -11,8 +11,8 @@ public class DBManager {
 
     public static final String TABLE_NAME_ZUMOS = "botellas";
     public static final String CN_ID_ZUMOS = "_id";
-    public static final String CN_BOTELLAS = "Tipo de botella";
-    public static final String CN_NUMERO = "Numero de botellas";
+    public static final String CN_BOTELLAS = "Tipo_Botella";
+    public static final String CN_NUMERO = "Numero_Botellas";
 
     public static final String CREATE_TABLE_ZUMOS = "create table " + TABLE_NAME_ZUMOS + " ("
             + CN_ID_ZUMOS + " integer primary key autoincrement,"
@@ -38,10 +38,10 @@ public class DBManager {
     /* TABLA DE LOS DATOS DE LA AZAFATA */
 
     public static final String TABLE_NAME_AZAFATA = "azafata";
-    public static final String CN_ID_AZAFATA = "DNI";
-    public static final String CN_NOMBRE = "Nombre de la Azafata";
-    public static final String CN_CENTRO = "Centro del evento";
-    public static final String CN_RECOGIDA = "Dia del Evento";
+    public static final String CN_ID_AZAFATA = "_id";
+    public static final String CN_NOMBRE = "Nombre_Azafata";
+    public static final String CN_CENTRO = "Centro_del_evento";
+    public static final String CN_RECOGIDA = "Dia_del_Evento";
 
     public static final String CREATE_TABLE_AZAFATA = "create table " + TABLE_NAME_AZAFATA + " ("
             + CN_ID_AZAFATA + " integer primary key autoincrement,"
