@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "BASEDATOSZUMOSOL.sqlite";
+    public static final String DB_NAME = "BASEDATOSZUMOSOL.sqlite";
     private static final int DB_SCHEME_VERSION = 1;
 
     public DBHelper(Context context) {

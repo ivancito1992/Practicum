@@ -9,6 +9,14 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class Zumosol extends AppCompatActivity implements View.OnClickListener {
 
@@ -349,49 +357,8 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         /* CARGAR DATOS DE LA AZAFATA Y DEL CENTRO */
 
         azafata = (EditText) findViewById(R.id.azafata);
-        //nombreAzafata = azafata.getText().toString();
         centro = (EditText) findViewById(R.id.centro);
-        //nombreCentro = centro.getText().toString();
         dia = (EditText) findViewById(R.id.dia);
-        //diaRecogida = dia.getText().toString();
-
-        /* DATOS ESTADISTICOS */
-
-        /*sMucho1 = contadorMucho1 / (contadorMucho1 + contadorPoco1 + contadorNada1);
-        sMucho2 = contadorMucho2 / (contadorMucho2 + contadorPoco2 + contadorNada2);
-        sMucho3 = contadorMucho3 / (contadorMucho3 + contadorPoco3 + contadorNada3);
-        sMucho4 = contadorMucho4 / (contadorMucho4 + contadorPoco4 + contadorNada4);
-        sMucho5 = contadorMucho5 / (contadorMucho5 + contadorPoco5 + contadorNada5);
-        sMucho6 = contadorMucho6 / (contadorMucho6 + contadorPoco6 + contadorNada6);
-        sMucho7 = contadorMucho7 / (contadorMucho7 + contadorPoco7 + contadorNada7);
-        sMucho8 = contadorMucho8 / (contadorMucho8 + contadorPoco8 + contadorNada8);
-        sMucho9 = contadorMucho9 / (contadorMucho9 + contadorPoco9 + contadorNada9);
-        sMucho10 = contadorMucho10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
-        sMucho11 = contadorMucho11 / (contadorMucho11 + contadorPoco11 + contadorNada11);
-
-        sPoco1 = contadorPoco1 / (contadorMucho1 + contadorPoco1 + contadorNada1);
-        sPoco2 = contadorPoco2 / (contadorMucho2 + contadorPoco2 + contadorNada2);
-        sPoco3 = contadorPoco3 / (contadorMucho3 + contadorPoco3 + contadorNada3);
-        sPoco4 = contadorPoco4 / (contadorMucho4 + contadorPoco4 + contadorNada4);
-        sPoco5 = contadorPoco5 / (contadorMucho5 + contadorPoco5 + contadorNada5);
-        sPoco6 = contadorPoco6 / (contadorMucho6 + contadorPoco6 + contadorNada6);
-        sPoco7 = contadorPoco7 / (contadorMucho7 + contadorPoco7 + contadorNada7);
-        sPoco8 = contadorPoco8 / (contadorMucho8 + contadorPoco8 + contadorNada8);
-        sPoco9 = contadorPoco9 / (contadorMucho9 + contadorPoco9 + contadorNada9);
-        sPoco10 = contadorPoco10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
-        sPoco11 = contadorPoco11 / (contadorMucho11 + contadorPoco11 + contadorNada11);
-
-        sNada1 = contadorNada1 / (contadorMucho1 + contadorPoco1 + contadorNada1);
-        sNada2 = contadorNada2 / (contadorMucho2 + contadorPoco2 + contadorNada2);
-        sNada3 = contadorNada3 / (contadorMucho3 + contadorPoco3 + contadorNada3);
-        sNada4 = contadorNada4 / (contadorMucho4 + contadorPoco4 + contadorNada4);
-        sNada5 = contadorNada5 / (contadorMucho5 + contadorPoco5 + contadorNada5);
-        sNada6 = contadorNada6 / (contadorMucho6 + contadorPoco6 + contadorNada6);
-        sNada7 = contadorNada7 / (contadorMucho7 + contadorPoco7 + contadorNada7);
-        sNada8 = contadorNada8 / (contadorMucho8 + contadorPoco8 + contadorNada8);
-        sNada9 = contadorNada9 / (contadorMucho9 + contadorPoco9 + contadorNada9);
-        sNada10 = contadorNada10 / (contadorMucho10 + contadorPoco10 + contadorNada10);
-        sNada11 = contadorNada11 / (contadorMucho11 + contadorPoco11 + contadorNada11);*/
 
         Button guardar = (Button) findViewById(R.id.guardarEnDB);
         guardar.setOnClickListener(this);
@@ -451,19 +418,12 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
             nombreCentro = centro.getText().toString();
             diaRecogida = dia.getText().toString();
             manager.insertarDatosAzafata(nombreAzafata, nombreCentro, diaRecogida);
-                /* INSERT DE LOS DATOS ESTADISTICOS */
-                /*manager.insertarDatosEstadisticos(preg1, sMucho1, sPoco1, sNada1);
-                manager.insertarDatosEstadisticos(preg2, sMucho2, sPoco2, sNada2);
-                manager.insertarDatosEstadisticos(preg3, sMucho3, sPoco3, sNada3);
-                manager.insertarDatosEstadisticos(preg4, sMucho4, sPoco4, sNada4);
-                manager.insertarDatosEstadisticos(preg5, sMucho5, sPoco5, sNada5);
-                manager.insertarDatosEstadisticos(preg6, sMucho6, sPoco6, sNada6);
-                manager.insertarDatosEstadisticos(preg7, sMucho7, sPoco7, sNada7);
-                manager.insertarDatosEstadisticos(preg8, sMucho8, sPoco8, sNada8);
-                manager.insertarDatosEstadisticos(preg9, sMucho9, sPoco9, sNada9);
-                manager.insertarDatosEstadisticos(preg10, sMucho10, sPoco10, sNada10);
-                manager.insertarDatosEstadisticos(preg11, sMucho11, sPoco11, sNada11);*/
                 /* MOVER A LA SIGUIENTE VISTA */
+            try {
+                DB_Backup();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             startActivity(new Intent(Zumosol.this, FinalizarApp.class));
             finish();
         }
@@ -886,5 +846,29 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     break;
             }
         }
+    }
+    private void DB_Backup() throws IOException{
+        String timeStamp = new SimpleDateFormat("ddMMyyyy_HHmmss").format(new Date());
+        final String inFileName = "/data/data/com.example.bahia.practicum/databases/"+DBHelper.DB_NAME;
+        File dbFile = new File(inFileName);
+        FileInputStream fis = null;
+
+        fis = new FileInputStream(dbFile);
+
+        String directorio = "/storage/emulated/0/BasesDatos";
+        File d = new File(directorio);
+        if(!d.exists()){
+            d.mkdir();
+        }
+        String outFileName = directorio+"/"+DBHelper.DB_NAME+"_"+timeStamp;
+        OutputStream output = new FileOutputStream(outFileName);
+        byte[] buffer = new byte[1024];
+        int length;
+        while((length = fis.read(buffer))>0){
+            output.write(buffer, 0, length);
+        }
+        output.flush();
+        output.close();
+        fis.close();
     }
 }
