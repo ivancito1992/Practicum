@@ -1423,7 +1423,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
 
         fis = new FileInputStream(dbFile);
 
-        String directorio = "/storage/emulated/0/BasesDatos";
+        String directorio = "/storage/sdcard0/BasesDatos";
         File d = new File(directorio);
         if(!d.exists()){
             d.mkdir();
