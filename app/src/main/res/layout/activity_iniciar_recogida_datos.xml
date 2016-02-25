@@ -17,8 +17,8 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="338dp"
-            android:layout_height="114dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/logo_aplicacion"
