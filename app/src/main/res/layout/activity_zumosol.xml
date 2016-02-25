@@ -477,6 +477,2221 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
+                android:id="@+id/espacioEntrePartes1" />
+
+            <TextView
+                style="@style/LetrasTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo5"
+                android:id="@+id/textView1"
+                android:textStyle="bold"
+                android:textIsSelectable="false"
+                android:gravity="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV1"
+                android:id="@+id/preguntaV1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV1"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV1"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV1"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV1"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV1"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV1"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV1"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV1"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV1"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV2"
+                android:id="@+id/preguntaV2" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV2"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV2"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV2"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV2"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV2"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV2"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV2"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV2"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV2"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV3"
+                android:id="@+id/preguntaV3" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV3"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV3"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV3"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV3"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV3"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV3"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV3"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV3"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV3"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV4"
+                android:id="@+id/preguntaV4" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV4"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV4"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV4"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV4"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV4"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV4"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV4"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV4"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV4"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV5"
+                android:id="@+id/preguntaV5" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV5"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV5"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV5"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV5"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV5"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV5"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV5"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV5"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV5"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV6"
+                android:id="@+id/preguntaV6" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV6"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV6"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV6"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV6"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV6"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV6"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV6"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV6"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV6"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV6"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV6"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV6"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV7"
+                android:id="@+id/preguntaV7" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV7"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV7"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV7"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV7"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV7"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV7"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV7"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV7"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV7"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV7"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV7"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV7"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV8"
+                android:id="@+id/preguntaV8" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV8"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV8"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV8"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV8"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV8"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV8"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV8"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV8"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV8"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV8"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV8"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV8"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV9"
+                android:id="@+id/preguntaV9" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV9"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV9"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV9"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV9"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV9"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV9"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV9"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV9"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV9"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV9"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV9"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV9"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV10"
+                android:id="@+id/preguntaV10" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV10"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV10"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV10"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV10"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV10"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV10"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV10"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV10"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV10"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV10"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV10"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV10"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                style="@style/LetrasSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preguntaV11"
+                android:id="@+id/preguntaV11" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionMucho"
+                        android:id="@+id/muchoPreguntaV11"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorMuchoPreguntaV11"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorMuchoPreguntaV11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorMuchoPreguntaV11"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionPoco"
+                        android:id="@+id/pocoPreguntaV11"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorPocoPreguntaV11"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorPocoPreguntaV11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorPocoPreguntaV11"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:weightSum="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/LetrasOtros"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcionNada"
+                        android:id="@+id/nadaPreguntaV11"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right" >
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnAñadir"
+                        android:id="@+id/sumadorNadaPreguntaV11"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/Numeros"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contador"
+                        android:id="@+id/contadorNadaPreguntaV11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:text="@string/btnQuitar"
+                        android:id="@+id/restadorNadaPreguntaV11"
+                        android:background="@drawable/btn_z_accion"
+                        android:textColor="#ffffff"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
                 android:id="@+id/espacioEntrePartes" />
 
             <TextView

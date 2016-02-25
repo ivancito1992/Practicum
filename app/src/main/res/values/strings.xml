@@ -9,21 +9,33 @@
 
     <string name="titulo1">Datos Generales</string>
     <string name="titulo2">Concepto</string>
-    <string name="titulo3">Datos de Interés</string>
+    <string name="titulo3">Datos de Interés Zumos</string>
     <string name="titulo4">Centro / Acción</string>
-    <string name="tituloFinal">GRACIAS POR SU ATENCIÓN</string>
+    <string name="titulo5">Datos de Interés Veggies</string>
 
     <string name="pregunta1">¿Ha gustado el sabor del zumo?</string>
     <string name="pregunta2">¿Ha gustado el envase / formato del zumo?</string>
-    <string name="pregunta3">¿El cliente aprecia la desgustación?</string>
+    <string name="pregunta3">¿El cliente aprecia la degustación?</string>
     <string name="pregunta4">¿El sabor resulta natural?</string>
     <string name="pregunta5">¿Ha gustado la mezcla de sabores?</string>
-    <string name="pregunta6">¿La mezcla con vegetales es la que menos gusta?</string>
+    <string name="pregunta6">¿La mezcla con zanahoria es la que menos gusta?</string>
     <string name="pregunta7">¿Los sabores resultan acidos?</string>
     <string name="pregunta8">¿El precio resulta elevado?</string>
     <string name="pregunta9">¿Aprecia que no tenga azucares añadidos?</string>
     <string name="pregunta10">¿El producto gustaria mas si estuviera refrigerado?</string>
     <string name="pregunta11">¿La verduras son mas predominantes en la mezcla de sabores?</string>
+
+    <string name="preguntaV1">¿Ha gustado el sabor del zumo?</string>
+    <string name="preguntaV2">¿Ha gustado el envase / formato del zumo?</string>
+    <string name="preguntaV3">¿El cliente aprecia la degustación?</string>
+    <string name="preguntaV4">¿El sabor resulta natural?</string>
+    <string name="preguntaV5">¿Ha gustado la mezcla de sabores?</string>
+    <string name="preguntaV6">¿Se aprecia que contengan verduras?</string>
+    <string name="preguntaV7">¿Ha gustado el sabor del Veggie Rojo?</string>
+    <string name="preguntaV8">¿Ha gustado el sabor del Veggie Verde?</string>
+    <string name="preguntaV9">¿Ha gustado el sabor del Veggie Naranja?</string>
+    <string name="preguntaV10">¿El precio resulta elevado?</string>
+    <string name="preguntaV11">¿Se aprecia que no contenga azúcares añadidos?</string>
 
     <string name="preguntaSiNo1">¿Ha tenido facilidad por parte del centro para realizar la acción?</string>
     <string name="preguntaSiNo2">¿Te han facilitado los productos sin problema?</string>

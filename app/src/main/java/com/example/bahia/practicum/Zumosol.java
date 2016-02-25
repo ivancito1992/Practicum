@@ -31,9 +31,14 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
     int contadorNada1, contadorNada2, contadorNada3, contadorNada4, contadorNada5, contadorNada6, contadorNada7, contadorNada8,
             contadorNada9, contadorNada10, contadorNada11 = 0;
 
-    //float sMucho1, sMucho2, sMucho3, sMucho4, sMucho5, sMucho6, sMucho7, sMucho8, sMucho9, sMucho10, sMucho11;
-    //float sPoco1, sPoco2, sPoco3, sPoco4, sPoco5, sPoco6, sPoco7, sPoco8, sPoco9, sPoco10, sPoco11;
-    //float sNada1, sNada2, sNada3, sNada4, sNada5, sNada6, sNada7, sNada8, sNada9, sNada10, sNada11;
+    int contadorMuchoV1, contadorMuchoV2, contadorMuchoV3, contadorMuchoV4, contadorMuchoV5, contadorMuchoV6, contadorMuchoV7,
+            contadorMuchoV8, contadorMuchoV9, contadorMuchoV10, contadorMuchoV11 = 0;
+
+    int contadorPocoV1, contadorPocoV2, contadorPocoV3, contadorPocoV4, contadorPocoV5, contadorPocoV6, contadorPocoV7, contadorPocoV8,
+            contadorPocoV9, contadorPocoV10, contadorPocoV11 = 0;
+
+    int contadorNadaV1, contadorNadaV2, contadorNadaV3, contadorNadaV4, contadorNadaV5, contadorNadaV6, contadorNadaV7, contadorNadaV8,
+            contadorNadaV9, contadorNadaV10, contadorNadaV11 = 0;
 
     Button sumadorClasico, sumadorAntiox, sumadorOrganico, sumadorPrisma, sumadorRojo, sumadorVerde, sumadorNaranja;
     Button restadorClasico, restadorAntiox, restadorOrganico, restadorPrisma, restadorRojo, restadorVerde, restadorNaranja;
@@ -47,15 +52,29 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
     Button sumNada1,sumNada2,sumNada3,sumNada4,sumNada5,sumNada6,sumNada7,sumNada8,sumNada9,sumNada10,sumNada11;
     Button resNada1,resNada2,resNada3,resNada4,resNada5,resNada6,resNada7,resNada8,resNada9,resNada10,resNada11;
 
+    Button sumMuchoV1,sumMuchoV2,sumMuchoV3,sumMuchoV4,sumMuchoV5,sumMuchoV6,sumMuchoV7,sumMuchoV8,sumMuchoV9,sumMuchoV10,sumMuchoV11;
+    Button resMuchoV1,resMuchoV2,resMuchoV3,resMuchoV4,resMuchoV5,resMuchoV6,resMuchoV7,resMuchoV8,resMuchoV9,resMuchoV10,resMuchoV11;
+
+    Button sumPocoV1,sumPocoV2,sumPocoV3,sumPocoV4,sumPocoV5,sumPocoV6,sumPocoV7,sumPocoV8,sumPocoV9,sumPocoV10,sumPocoV11;
+    Button resPocoV1,resPocoV2,resPocoV3,resPocoV4,resPocoV5,resPocoV6,resPocoV7,resPocoV8,resPocoV9,resPocoV10,resPocoV11;
+
+    Button sumNadaV1,sumNadaV2,sumNadaV3,sumNadaV4,sumNadaV5,sumNadaV6,sumNadaV7,sumNadaV8,sumNadaV9,sumNadaV10,sumNadaV11;
+    Button resNadaV1,resNadaV2,resNadaV3,resNadaV4,resNadaV5,resNadaV6,resNadaV7,resNadaV8,resNadaV9,resNadaV10,resNadaV11;
+
     TextView cantidadClasico, cantidadAntiox, cantidadOrganico, cantidadPrisma, cantidadRojo, cantidadVerde, cantidadNaranja;
     TextView cantidadMucho1, cantidadMucho2, cantidadMucho3, cantidadMucho4, cantidadMucho5, cantidadMucho6, cantidadMucho7, cantidadMucho8, cantidadMucho9, cantidadMucho10, cantidadMucho11;
     TextView cantidadPoco1, cantidadPoco2, cantidadPoco3, cantidadPoco4, cantidadPoco5, cantidadPoco6, cantidadPoco7, cantidadPoco8, cantidadPoco9, cantidadPoco10, cantidadPoco11;
     TextView cantidadNada1, cantidadNada2, cantidadNada3, cantidadNada4, cantidadNada5, cantidadNada6, cantidadNada7, cantidadNada8, cantidadNada9, cantidadNada10, cantidadNada11;
+    TextView cantidadMuchoV1, cantidadMuchoV2, cantidadMuchoV3, cantidadMuchoV4, cantidadMuchoV5, cantidadMuchoV6, cantidadMuchoV7, cantidadMuchoV8, cantidadMuchoV9, cantidadMuchoV10, cantidadMuchoV11;
+    TextView cantidadPocoV1, cantidadPocoV2, cantidadPocoV3, cantidadPocoV4, cantidadPocoV5, cantidadPocoV6, cantidadPocoV7, cantidadPocoV8, cantidadPocoV9, cantidadPocoV10, cantidadPocoV11;
+    TextView cantidadNadaV1, cantidadNadaV2, cantidadNadaV3, cantidadNadaV4, cantidadNadaV5, cantidadNadaV6, cantidadNadaV7, cantidadNadaV8, cantidadNadaV9, cantidadNadaV10, cantidadNadaV11;
 
     TextView nombreClasico, nombreAntiox, nombreOrganico, nombrePrisma, nombreRojo, nombreVerde, nombreNaranja;
     String clasico, antiox, organico, prisma, rojo, verde, naranja;
     TextView pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10, pregunta11, preguntaSN1, preguntaSN2, preguntaSN3;
     String preg1, preg2, preg3, preg4, preg5, preg6, preg7, preg8, preg9, preg10, preg11, pregSiNo1, pregSiNo2, pregSiNo3;
+    TextView preguntaV1, preguntaV2, preguntaV3, preguntaV4, preguntaV5, preguntaV6, preguntaV7, preguntaV8, preguntaV9, preguntaV10, preguntaV11;
+    String pregV1, pregV2, pregV3, pregV4, pregV5, pregV6, pregV7, pregV8, pregV9, pregV10, pregV11;
 
     RadioButton si1, si2, si3, no1, no2, no3;
 
@@ -104,7 +123,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         restadorNaranja = (Button) findViewById(R.id.resNaranja);
         restadorNaranja.setOnClickListener(this);
 
-        /* BOTONES PARA AUMENTAR EL CONTADOR MUCHO DE LAS PREGUNTAS */
+        /* BOTONES PARA AUMENTAR EL CONTADOR MUCHO DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         sumMucho1 = (Button) findViewById(R.id.sumadorMuchoPregunta1);
         sumMucho1.setOnClickListener(this);
@@ -129,7 +148,30 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         sumMucho11 = (Button) findViewById(R.id.sumadorMuchoPregunta11);
         sumMucho11.setOnClickListener(this);
 
-        /* BOTONES PARA DECREMENTAR EL CONTADOR MUCHO DE LAS PREGUNTAS */
+        sumMuchoV1 = (Button) findViewById(R.id.sumadorMuchoPreguntaV1);
+        sumMuchoV1.setOnClickListener(this);
+        sumMuchoV2 = (Button) findViewById(R.id.sumadorMuchoPreguntaV2);
+        sumMuchoV2.setOnClickListener(this);
+        sumMuchoV3 = (Button) findViewById(R.id.sumadorMuchoPreguntaV3);
+        sumMuchoV3.setOnClickListener(this);
+        sumMuchoV4 = (Button) findViewById(R.id.sumadorMuchoPreguntaV4);
+        sumMuchoV4.setOnClickListener(this);
+        sumMuchoV5 = (Button) findViewById(R.id.sumadorMuchoPreguntaV5);
+        sumMuchoV5.setOnClickListener(this);
+        sumMuchoV6 = (Button) findViewById(R.id.sumadorMuchoPreguntaV6);
+        sumMuchoV6.setOnClickListener(this);
+        sumMuchoV7 = (Button) findViewById(R.id.sumadorMuchoPreguntaV7);
+        sumMuchoV7.setOnClickListener(this);
+        sumMuchoV8 = (Button) findViewById(R.id.sumadorMuchoPreguntaV8);
+        sumMuchoV8.setOnClickListener(this);
+        sumMuchoV9 = (Button) findViewById(R.id.sumadorMuchoPreguntaV9);
+        sumMuchoV9.setOnClickListener(this);
+        sumMuchoV10 = (Button) findViewById(R.id.sumadorMuchoPreguntaV10);
+        sumMuchoV10.setOnClickListener(this);
+        sumMuchoV11 = (Button) findViewById(R.id.sumadorMuchoPreguntaV11);
+        sumMuchoV11.setOnClickListener(this);
+
+        /* BOTONES PARA DECREMENTAR EL CONTADOR MUCHO DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         resMucho1 = (Button) findViewById(R.id.restadorMuchoPregunta1);
         resMucho1.setOnClickListener(this);
@@ -154,7 +196,30 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         resMucho11 = (Button) findViewById(R.id.restadorMuchoPregunta11);
         resMucho11.setOnClickListener(this);
 
-        /* BOTONES PARA AUMENTAR EL CONTADOR POCO DE LAS PREGUNTAS */
+        resMuchoV1 = (Button) findViewById(R.id.restadorMuchoPreguntaV1);
+        resMuchoV1.setOnClickListener(this);
+        resMuchoV2 = (Button) findViewById(R.id.restadorMuchoPreguntaV2);
+        resMuchoV2.setOnClickListener(this);
+        resMuchoV3 = (Button) findViewById(R.id.restadorMuchoPreguntaV3);
+        resMuchoV3.setOnClickListener(this);
+        resMuchoV4 = (Button) findViewById(R.id.restadorMuchoPreguntaV4);
+        resMuchoV4.setOnClickListener(this);
+        resMuchoV5 = (Button) findViewById(R.id.restadorMuchoPreguntaV5);
+        resMuchoV5.setOnClickListener(this);
+        resMuchoV6 = (Button) findViewById(R.id.restadorMuchoPreguntaV6);
+        resMuchoV6.setOnClickListener(this);
+        resMuchoV7 = (Button) findViewById(R.id.restadorMuchoPreguntaV7);
+        resMuchoV7.setOnClickListener(this);
+        resMuchoV8 = (Button) findViewById(R.id.restadorMuchoPreguntaV8);
+        resMuchoV8.setOnClickListener(this);
+        resMuchoV9 = (Button) findViewById(R.id.restadorMuchoPreguntaV9);
+        resMuchoV9.setOnClickListener(this);
+        resMuchoV10 = (Button) findViewById(R.id.restadorMuchoPreguntaV10);
+        resMuchoV10.setOnClickListener(this);
+        resMuchoV11 = (Button) findViewById(R.id.restadorMuchoPreguntaV11);
+        resMuchoV11.setOnClickListener(this);
+
+        /* BOTONES PARA AUMENTAR EL CONTADOR POCO DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         sumPoco1 = (Button) findViewById(R.id.sumadorPocoPregunta1);
         sumPoco1.setOnClickListener(this);
@@ -179,7 +244,30 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         sumPoco11 = (Button) findViewById(R.id.sumadorPocoPregunta11);
         sumPoco11.setOnClickListener(this);
 
-        /* BOTONES PARA DECREMENTAR EL CONTADOR POCO DE LAS PREGUNTAS */
+        sumPocoV1 = (Button) findViewById(R.id.sumadorPocoPreguntaV1);
+        sumPocoV1.setOnClickListener(this);
+        sumPocoV2 = (Button) findViewById(R.id.sumadorPocoPreguntaV2);
+        sumPocoV2.setOnClickListener(this);
+        sumPocoV3 = (Button) findViewById(R.id.sumadorPocoPreguntaV3);
+        sumPocoV3.setOnClickListener(this);
+        sumPocoV4 = (Button) findViewById(R.id.sumadorPocoPreguntaV4);
+        sumPocoV4.setOnClickListener(this);
+        sumPocoV5 = (Button) findViewById(R.id.sumadorPocoPreguntaV5);
+        sumPocoV5.setOnClickListener(this);
+        sumPocoV6 = (Button) findViewById(R.id.sumadorPocoPreguntaV6);
+        sumPocoV6.setOnClickListener(this);
+        sumPocoV7 = (Button) findViewById(R.id.sumadorPocoPreguntaV7);
+        sumPocoV7.setOnClickListener(this);
+        sumPocoV8 = (Button) findViewById(R.id.sumadorPocoPreguntaV8);
+        sumPocoV8.setOnClickListener(this);
+        sumPocoV9 = (Button) findViewById(R.id.sumadorPocoPreguntaV9);
+        sumPocoV9.setOnClickListener(this);
+        sumPocoV10 = (Button) findViewById(R.id.sumadorPocoPreguntaV10);
+        sumPocoV10.setOnClickListener(this);
+        sumPocoV11 = (Button) findViewById(R.id.sumadorPocoPreguntaV11);
+        sumPocoV11.setOnClickListener(this);
+
+        /* BOTONES PARA DECREMENTAR EL CONTADOR POCO DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         resPoco1 = (Button) findViewById(R.id.restadorPocoPregunta1);
         resPoco1.setOnClickListener(this);
@@ -204,7 +292,30 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         resPoco11 = (Button) findViewById(R.id.restadorPocoPregunta11);
         resPoco11.setOnClickListener(this);
 
-        /* BOTONES PARA AUMENTAR EL CONTADOR NADA DE LAS PREGUNTAS */
+        resPocoV1 = (Button) findViewById(R.id.restadorPocoPreguntaV1);
+        resPocoV1.setOnClickListener(this);
+        resPocoV2 = (Button) findViewById(R.id.restadorPocoPreguntaV2);
+        resPocoV2.setOnClickListener(this);
+        resPocoV3 = (Button) findViewById(R.id.restadorPocoPreguntaV3);
+        resPocoV3.setOnClickListener(this);
+        resPocoV4 = (Button) findViewById(R.id.restadorPocoPreguntaV4);
+        resPocoV4.setOnClickListener(this);
+        resPocoV5 = (Button) findViewById(R.id.restadorPocoPreguntaV5);
+        resPocoV5.setOnClickListener(this);
+        resPocoV6 = (Button) findViewById(R.id.restadorPocoPreguntaV6);
+        resPocoV6.setOnClickListener(this);
+        resPocoV7 = (Button) findViewById(R.id.restadorPocoPreguntaV7);
+        resPocoV7.setOnClickListener(this);
+        resPocoV8 = (Button) findViewById(R.id.restadorPocoPreguntaV8);
+        resPocoV8.setOnClickListener(this);
+        resPocoV9 = (Button) findViewById(R.id.restadorPocoPreguntaV9);
+        resPocoV9.setOnClickListener(this);
+        resPocoV10 = (Button) findViewById(R.id.restadorPocoPreguntaV10);
+        resPocoV10.setOnClickListener(this);
+        resPocoV11 = (Button) findViewById(R.id.restadorPocoPreguntaV11);
+        resPocoV11.setOnClickListener(this);
+
+        /* BOTONES PARA AUMENTAR EL CONTADOR NADA DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         sumNada1 = (Button) findViewById(R.id.sumadorNadaPregunta1);
         sumNada1.setOnClickListener(this);
@@ -229,7 +340,30 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         sumNada11 = (Button) findViewById(R.id.sumadorNadaPregunta11);
         sumNada11.setOnClickListener(this);
 
-        /* BOTONES PARA DECREMENTAR EL CONTADOR NADA DE LAS PREGUNTAS */
+        sumNadaV1 = (Button) findViewById(R.id.sumadorNadaPreguntaV1);
+        sumNadaV1.setOnClickListener(this);
+        sumNadaV2 = (Button) findViewById(R.id.sumadorNadaPreguntaV2);
+        sumNadaV2.setOnClickListener(this);
+        sumNadaV3 = (Button) findViewById(R.id.sumadorNadaPreguntaV3);
+        sumNadaV3.setOnClickListener(this);
+        sumNadaV4 = (Button) findViewById(R.id.sumadorNadaPreguntaV4);
+        sumNadaV4.setOnClickListener(this);
+        sumNadaV5 = (Button) findViewById(R.id.sumadorNadaPreguntaV5);
+        sumNadaV5.setOnClickListener(this);
+        sumNadaV6 = (Button) findViewById(R.id.sumadorNadaPreguntaV6);
+        sumNadaV6.setOnClickListener(this);
+        sumNadaV7 = (Button) findViewById(R.id.sumadorNadaPreguntaV7);
+        sumNadaV7.setOnClickListener(this);
+        sumNadaV8 = (Button) findViewById(R.id.sumadorNadaPreguntaV8);
+        sumNadaV8.setOnClickListener(this);
+        sumNadaV9 = (Button) findViewById(R.id.sumadorNadaPreguntaV9);
+        sumNadaV9.setOnClickListener(this);
+        sumNadaV10 = (Button) findViewById(R.id.sumadorNadaPreguntaV10);
+        sumNadaV10.setOnClickListener(this);
+        sumNadaV11 = (Button) findViewById(R.id.sumadorNadaPreguntaV11);
+        sumNadaV11.setOnClickListener(this);
+
+        /* BOTONES PARA DECREMENTAR EL CONTADOR NADA DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         resNada1 = (Button) findViewById(R.id.restadorNadaPregunta1);
         resNada1.setOnClickListener(this);
@@ -254,6 +388,29 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         resNada11 = (Button) findViewById(R.id.restadorNadaPregunta11);
         resNada11.setOnClickListener(this);
 
+        resNadaV1 = (Button) findViewById(R.id.restadorNadaPreguntaV1);
+        resNadaV1.setOnClickListener(this);
+        resNadaV2 = (Button) findViewById(R.id.restadorNadaPreguntaV2);
+        resNadaV2.setOnClickListener(this);
+        resNadaV3 = (Button) findViewById(R.id.restadorNadaPreguntaV3);
+        resNadaV3.setOnClickListener(this);
+        resNadaV4 = (Button) findViewById(R.id.restadorNadaPreguntaV4);
+        resNadaV4.setOnClickListener(this);
+        resNadaV5 = (Button) findViewById(R.id.restadorNadaPreguntaV5);
+        resNadaV5.setOnClickListener(this);
+        resNadaV6 = (Button) findViewById(R.id.restadorNadaPreguntaV6);
+        resNadaV6.setOnClickListener(this);
+        resNadaV7 = (Button) findViewById(R.id.restadorNadaPreguntaV7);
+        resNadaV7.setOnClickListener(this);
+        resNadaV8 = (Button) findViewById(R.id.restadorNadaPreguntaV8);
+        resNadaV8.setOnClickListener(this);
+        resNadaV9 = (Button) findViewById(R.id.restadorNadaPreguntaV9);
+        resNadaV9.setOnClickListener(this);
+        resNadaV10 = (Button) findViewById(R.id.restadorNadaPreguntaV10);
+        resNadaV10.setOnClickListener(this);
+        resNadaV11 = (Button) findViewById(R.id.restadorNadaPreguntaV11);
+        resNadaV11.setOnClickListener(this);
+
         /*INICIALIZAR EL TEXTVIEW CON LOS CONTADORES A 0*/
 
         cantidadClasico = (TextView) findViewById(R.id.cantidadClasico);
@@ -263,6 +420,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         cantidadRojo = (TextView) findViewById(R.id.cantidadRojo);
         cantidadVerde = (TextView) findViewById(R.id.cantidadVerde);
         cantidadNaranja = (TextView) findViewById(R.id.cantidadNaranja);
+
         cantidadMucho1 = (TextView) findViewById(R.id.contadorMuchoPregunta1);
         cantidadMucho2 = (TextView) findViewById(R.id.contadorMuchoPregunta2);
         cantidadMucho3 = (TextView) findViewById(R.id.contadorMuchoPregunta3);
@@ -297,6 +455,40 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         cantidadNada10 = (TextView) findViewById(R.id.contadorNadaPregunta10);
         cantidadNada11 = (TextView) findViewById(R.id.contadorNadaPregunta11);
 
+        cantidadMuchoV1 = (TextView) findViewById(R.id.contadorMuchoPreguntaV1);
+        cantidadMuchoV2 = (TextView) findViewById(R.id.contadorMuchoPreguntaV2);
+        cantidadMuchoV3 = (TextView) findViewById(R.id.contadorMuchoPreguntaV3);
+        cantidadMuchoV4 = (TextView) findViewById(R.id.contadorMuchoPreguntaV4);
+        cantidadMuchoV5 = (TextView) findViewById(R.id.contadorMuchoPreguntaV5);
+        cantidadMuchoV6 = (TextView) findViewById(R.id.contadorMuchoPreguntaV6);
+        cantidadMuchoV7 = (TextView) findViewById(R.id.contadorMuchoPreguntaV7);
+        cantidadMuchoV8 = (TextView) findViewById(R.id.contadorMuchoPreguntaV8);
+        cantidadMuchoV9 = (TextView) findViewById(R.id.contadorMuchoPreguntaV9);
+        cantidadMuchoV10 = (TextView) findViewById(R.id.contadorMuchoPreguntaV10);
+        cantidadMuchoV11 = (TextView) findViewById(R.id.contadorMuchoPreguntaV11);
+        cantidadPocoV1 = (TextView) findViewById(R.id.contadorPocoPreguntaV1);
+        cantidadPocoV2 = (TextView) findViewById(R.id.contadorPocoPreguntaV2);
+        cantidadPocoV3 = (TextView) findViewById(R.id.contadorPocoPreguntaV3);
+        cantidadPocoV4 = (TextView) findViewById(R.id.contadorPocoPreguntaV4);
+        cantidadPocoV5 = (TextView) findViewById(R.id.contadorPocoPreguntaV5);
+        cantidadPocoV6 = (TextView) findViewById(R.id.contadorPocoPreguntaV6);
+        cantidadPocoV7 = (TextView) findViewById(R.id.contadorPocoPreguntaV7);
+        cantidadPocoV8 = (TextView) findViewById(R.id.contadorPocoPreguntaV8);
+        cantidadPocoV9 = (TextView) findViewById(R.id.contadorPocoPreguntaV9);
+        cantidadPocoV10 = (TextView) findViewById(R.id.contadorPocoPreguntaV10);
+        cantidadPocoV11 = (TextView) findViewById(R.id.contadorPocoPreguntaV11);
+        cantidadNadaV1 = (TextView) findViewById(R.id.contadorNadaPreguntaV1);
+        cantidadNadaV2 = (TextView) findViewById(R.id.contadorNadaPreguntaV2);
+        cantidadNadaV3 = (TextView) findViewById(R.id.contadorNadaPreguntaV3);
+        cantidadNadaV4 = (TextView) findViewById(R.id.contadorNadaPreguntaV4);
+        cantidadNadaV5 = (TextView) findViewById(R.id.contadorNadaPreguntaV5);
+        cantidadNadaV6 = (TextView) findViewById(R.id.contadorNadaPreguntaV6);
+        cantidadNadaV7 = (TextView) findViewById(R.id.contadorNadaPreguntaV7);
+        cantidadNadaV8 = (TextView) findViewById(R.id.contadorNadaPreguntaV8);
+        cantidadNadaV9 = (TextView) findViewById(R.id.contadorNadaPreguntaV9);
+        cantidadNadaV10 = (TextView) findViewById(R.id.contadorNadaPreguntaV10);
+        cantidadNadaV11 = (TextView) findViewById(R.id.contadorNadaPreguntaV11);
+
         /* CARGAR EL TEXTO DE LOS ZUMOS */
 
         nombreClasico = (TextView) findViewById(R.id.nombreClasico);
@@ -314,7 +506,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         nombreNaranja = (TextView) findViewById(R.id.nombreNaranja);
         naranja = nombreNaranja.getText().toString();
 
-        /* CARGAR EL TEXTO DE LAS PREGUNTAS */
+        /* CARGAR EL TEXTO DE LAS PREGUNTAS DE ZUMOS Y VEGGIES */
 
         pregunta1 = (TextView) findViewById(R.id.pregunta1);
         preg1 = pregunta1.getText().toString();
@@ -338,6 +530,30 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         preg10 = pregunta10.getText().toString();
         pregunta11 = (TextView) findViewById(R.id.pregunta11);
         preg11 = pregunta11.getText().toString();
+
+        preguntaV1 = (TextView) findViewById(R.id.preguntaV1);
+        pregV1 = preguntaV1.getText().toString();
+        preguntaV2 = (TextView) findViewById(R.id.preguntaV2);
+        pregV2 = preguntaV2.getText().toString();
+        preguntaV3 = (TextView) findViewById(R.id.preguntaV3);
+        pregV3 = preguntaV3.getText().toString();
+        preguntaV4 = (TextView) findViewById(R.id.preguntaV4);
+        pregV4 = preguntaV4.getText().toString();
+        preguntaV5 = (TextView) findViewById(R.id.preguntaV5);
+        pregV5 = preguntaV5.getText().toString();
+        preguntaV6 = (TextView) findViewById(R.id.preguntaV6);
+        pregV6 = preguntaV6.getText().toString();
+        preguntaV7 = (TextView) findViewById(R.id.preguntaV7);
+        pregV7 = preguntaV7.getText().toString();
+        preguntaV8 = (TextView) findViewById(R.id.preguntaV8);
+        pregV8 = preguntaV8.getText().toString();
+        preguntaV9 = (TextView) findViewById(R.id.preguntaV9);
+        pregV9 = preguntaV9.getText().toString();
+        preguntaV10 = (TextView) findViewById(R.id.preguntaV10);
+        pregV10 = preguntaV10.getText().toString();
+        preguntaV11 = (TextView) findViewById(R.id.preguntaV11);
+        pregV11 = preguntaV11.getText().toString();
+
         preguntaSN1 = (TextView) findViewById(R.id.preguntaSiNo1);
         pregSiNo1 = preguntaSN1.getText().toString();
         preguntaSN2 = (TextView) findViewById(R.id.preguntaSiNo2);
@@ -374,7 +590,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
         DBManager manager = new DBManager(this);
 
         if (v.getId()==R.id.guardarEnDB){
-            /* INSERT DE LAS PREGUNTAS GENERALES */
+            /* INSERT DE LAS PREGUNTAS ZUMOS */
             manager.insertarPreguntasGenerales(preg1, contadorMucho1, contadorPoco1, contadorNada1);
             manager.insertarPreguntasGenerales(preg2, contadorMucho2, contadorPoco2, contadorNada2);
             manager.insertarPreguntasGenerales(preg3, contadorMucho3, contadorPoco3, contadorNada3);
@@ -386,6 +602,18 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
             manager.insertarPreguntasGenerales(preg9, contadorMucho9, contadorPoco9, contadorNada9);
             manager.insertarPreguntasGenerales(preg10, contadorMucho10, contadorPoco10, contadorNada10);
             manager.insertarPreguntasGenerales(preg11, contadorMucho11, contadorPoco11, contadorNada11);
+            /* INSERT DE LAS PREGUNTAS VEGGIES */
+            manager.insertarPreguntasVeggies(pregV1, contadorMuchoV1, contadorPocoV1, contadorNadaV1);
+            manager.insertarPreguntasVeggies(pregV2, contadorMuchoV2, contadorPocoV2, contadorNadaV2);
+            manager.insertarPreguntasVeggies(pregV3, contadorMuchoV3, contadorPocoV3, contadorNadaV3);
+            manager.insertarPreguntasVeggies(pregV4, contadorMuchoV4, contadorPocoV4, contadorNadaV4);
+            manager.insertarPreguntasVeggies(pregV5, contadorMuchoV5, contadorPocoV5, contadorNadaV5);
+            manager.insertarPreguntasVeggies(pregV6, contadorMuchoV6, contadorPocoV6, contadorNadaV6);
+            manager.insertarPreguntasVeggies(pregV7, contadorMuchoV7, contadorPocoV7, contadorNadaV7);
+            manager.insertarPreguntasVeggies(pregV8, contadorMuchoV8, contadorPocoV8, contadorNadaV8);
+            manager.insertarPreguntasVeggies(pregV9, contadorMuchoV9, contadorPocoV9, contadorNadaV9);
+            manager.insertarPreguntasVeggies(pregV10, contadorMuchoV10, contadorPocoV10, contadorNadaV10);
+            manager.insertarPreguntasVeggies(pregV11, contadorMuchoV11, contadorPocoV11, contadorNadaV11);
                 /* INSERT DE LOS ZUMOS */
             manager.insertarZumos(clasico, contadorClasico);
             manager.insertarZumos(antiox, contadorAntiox);
@@ -504,7 +732,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
 
-            /* SUMA CANTIDAD A MUCHOS DE PREGUNTAS */
+            /* SUMA CANTIDAD A MUCHOS DE PREGUNTAS ZUMOS */
                 case R.id.sumadorMuchoPregunta1:
                     contadorMucho1++;
                     cantidadMucho1.setText(Integer.toString(contadorMucho1));
@@ -550,7 +778,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     cantidadMucho11.setText(Integer.toString(contadorMucho11));
                     break;
 
-            /* RESTA CANTIDAD A MUCHOS DE PREGUNTAS */
+            /* RESTA CANTIDAD A MUCHOS DE PREGUNTAS ZUMOS */
                 case R.id.restadorMuchoPregunta1:
                     if (contadorMucho1 > 0) {
                         contadorMucho1--;
@@ -618,7 +846,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
 
-            /* SUMA CANTIDAD A POCOS DE PREGUNTAS */
+            /* SUMA CANTIDAD A POCOS DE PREGUNTAS ZUMOS */
                 case R.id.sumadorPocoPregunta1:
                     contadorPoco1++;
                     cantidadPoco1.setText(Integer.toString(contadorPoco1));
@@ -664,7 +892,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     cantidadPoco11.setText(Integer.toString(contadorPoco11));
                     break;
 
-            /* RESTA CANTIDAD A POCOS DE PREGUNTAS */
+            /* RESTA CANTIDAD A POCOS DE PREGUNTAS ZUMOS */
                 case R.id.restadorPocoPregunta1:
                     if (contadorPoco1 > 0) {
                         contadorPoco1--;
@@ -731,7 +959,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     }
                     break;
 
-            /* SUMA CANTIDAD A NADA DE PREGUNTAS */
+            /* SUMA CANTIDAD A NADA DE PREGUNTAS ZUMOS */
                 case R.id.sumadorNadaPregunta1:
                     contadorNada1++;
                     cantidadNada1.setText(Integer.toString(contadorNada1));
@@ -777,7 +1005,7 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     cantidadNada11.setText(Integer.toString(contadorNada11));
                     break;
 
-            /* RESTA CANTIDAD A POCOS DE PREGUNTAS */
+            /* RESTA CANTIDAD A POCOS DE PREGUNTAS ZUMOS */
                 case R.id.restadorNadaPregunta1:
                     if (contadorNada1 > 0) {
                         contadorNada1--;
@@ -842,6 +1070,346 @@ public class Zumosol extends AppCompatActivity implements View.OnClickListener {
                     if (contadorNada11 > 0) {
                         contadorNada11--;
                         cantidadNada11.setText(Integer.toString(contadorNada11));
+                    }
+                    break;
+                /* SUMA CANTIDAD A MUCHOS DE PREGUNTAS VEGGIES */
+                case R.id.sumadorMuchoPreguntaV1:
+                    contadorMuchoV1++;
+                    cantidadMuchoV1.setText(Integer.toString(contadorMuchoV1));
+                    break;
+                case R.id.sumadorMuchoPreguntaV2:
+                    contadorMuchoV2++;
+                    cantidadMuchoV2.setText(Integer.toString(contadorMuchoV2));
+                    break;
+                case R.id.sumadorMuchoPreguntaV3:
+                    contadorMuchoV3++;
+                    cantidadMuchoV3.setText(Integer.toString(contadorMuchoV3));
+                    break;
+                case R.id.sumadorMuchoPreguntaV4:
+                    contadorMuchoV4++;
+                    cantidadMuchoV4.setText(Integer.toString(contadorMuchoV4));
+                    break;
+                case R.id.sumadorMuchoPreguntaV5:
+                    contadorMuchoV5++;
+                    cantidadMuchoV5.setText(Integer.toString(contadorMuchoV5));
+                    break;
+                case R.id.sumadorMuchoPreguntaV6:
+                    contadorMuchoV6++;
+                    cantidadMuchoV6.setText(Integer.toString(contadorMuchoV6));
+                    break;
+                case R.id.sumadorMuchoPreguntaV7:
+                    contadorMuchoV7++;
+                    cantidadMuchoV7.setText(Integer.toString(contadorMuchoV7));
+                    break;
+                case R.id.sumadorMuchoPreguntaV8:
+                    contadorMuchoV8++;
+                    cantidadMuchoV8.setText(Integer.toString(contadorMuchoV8));
+                    break;
+                case R.id.sumadorMuchoPreguntaV9:
+                    contadorMuchoV9++;
+                    cantidadMuchoV9.setText(Integer.toString(contadorMuchoV9));
+                    break;
+                case R.id.sumadorMuchoPreguntaV10:
+                    contadorMuchoV10++;
+                    cantidadMuchoV10.setText(Integer.toString(contadorMuchoV10));
+                    break;
+                case R.id.sumadorMuchoPreguntaV11:
+                    contadorMuchoV11++;
+                    cantidadMuchoV11.setText(Integer.toString(contadorMuchoV11));
+                    break;
+
+            /* RESTA CANTIDAD A MUCHOS DE PREGUNTAS VEGGIES */
+                case R.id.restadorMuchoPreguntaV1:
+                    if (contadorMuchoV1 > 0) {
+                        contadorMuchoV1--;
+                        cantidadMuchoV1.setText(Integer.toString(contadorMuchoV1));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV2:
+                    if (contadorMuchoV2 > 0) {
+                        contadorMuchoV2--;
+                        cantidadMuchoV2.setText(Integer.toString(contadorMuchoV2));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV3:
+                    if (contadorMuchoV3 > 0) {
+                        contadorMuchoV3--;
+                        cantidadMuchoV3.setText(Integer.toString(contadorMuchoV3));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV4:
+                    if (contadorMuchoV4 > 0) {
+                        contadorMuchoV4--;
+                        cantidadMuchoV4.setText(Integer.toString(contadorMuchoV4));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV5:
+                    if (contadorMuchoV5 > 0) {
+                        contadorMuchoV5--;
+                        cantidadMuchoV5.setText(Integer.toString(contadorMuchoV5));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV6:
+                    if (contadorMuchoV6 > 0) {
+                        contadorMuchoV6--;
+                        cantidadMuchoV6.setText(Integer.toString(contadorMuchoV6));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV7:
+                    if (contadorMuchoV7 > 0) {
+                        contadorMuchoV7--;
+                        cantidadMuchoV7.setText(Integer.toString(contadorMuchoV7));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV8:
+                    if (contadorMuchoV8 > 0) {
+                        contadorMuchoV8--;
+                        cantidadMuchoV8.setText(Integer.toString(contadorMuchoV8));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV9:
+                    if (contadorMuchoV9 > 0) {
+                        contadorMuchoV9--;
+                        cantidadMuchoV9.setText(Integer.toString(contadorMuchoV9));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV10:
+                    if (contadorMuchoV10 > 0) {
+                        contadorMuchoV10--;
+                        cantidadMuchoV10.setText(Integer.toString(contadorMuchoV10));
+                    }
+                    break;
+                case R.id.restadorMuchoPreguntaV11:
+                    if (contadorMuchoV11 > 0) {
+                        contadorMuchoV11--;
+                        cantidadMuchoV11.setText(Integer.toString(contadorMuchoV11));
+                    }
+                    break;
+
+            /* SUMA CANTIDAD A POCOS DE PREGUNTAS VEGGIES */
+                case R.id.sumadorPocoPreguntaV1:
+                    contadorPocoV1++;
+                    cantidadPocoV1.setText(Integer.toString(contadorPocoV1));
+                    break;
+                case R.id.sumadorPocoPreguntaV2:
+                    contadorPocoV2++;
+                    cantidadPocoV2.setText(Integer.toString(contadorPocoV2));
+                    break;
+                case R.id.sumadorPocoPreguntaV3:
+                    contadorPocoV3++;
+                    cantidadPocoV3.setText(Integer.toString(contadorPocoV3));
+                    break;
+                case R.id.sumadorPocoPreguntaV4:
+                    contadorPocoV4++;
+                    cantidadPocoV4.setText(Integer.toString(contadorPocoV4));
+                    break;
+                case R.id.sumadorPocoPreguntaV5:
+                    contadorPocoV5++;
+                    cantidadPocoV5.setText(Integer.toString(contadorPocoV5));
+                    break;
+                case R.id.sumadorPocoPreguntaV6:
+                    contadorPocoV6++;
+                    cantidadPocoV6.setText(Integer.toString(contadorPocoV6));
+                    break;
+                case R.id.sumadorPocoPreguntaV7:
+                    contadorPocoV7++;
+                    cantidadPocoV7.setText(Integer.toString(contadorPocoV7));
+                    break;
+                case R.id.sumadorPocoPreguntaV8:
+                    contadorPocoV8++;
+                    cantidadPocoV8.setText(Integer.toString(contadorPocoV8));
+                    break;
+                case R.id.sumadorPocoPreguntaV9:
+                    contadorPocoV9++;
+                    cantidadPocoV9.setText(Integer.toString(contadorPocoV9));
+                    break;
+                case R.id.sumadorPocoPreguntaV10:
+                    contadorPocoV10++;
+                    cantidadPocoV10.setText(Integer.toString(contadorPocoV10));
+                    break;
+                case R.id.sumadorPocoPreguntaV11:
+                    contadorPocoV11++;
+                    cantidadPocoV11.setText(Integer.toString(contadorPocoV11));
+                    break;
+
+            /* RESTA CANTIDAD A POCOS DE PREGUNTAS VEGGIES */
+                case R.id.restadorPocoPreguntaV1:
+                    if (contadorPocoV1 > 0) {
+                        contadorPocoV1--;
+                        cantidadPocoV1.setText(Integer.toString(contadorPocoV1));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV2:
+                    if (contadorPocoV2 > 0) {
+                        contadorPocoV2--;
+                        cantidadPocoV2.setText(Integer.toString(contadorPocoV2));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV3:
+                    if (contadorPocoV3 > 0) {
+                        contadorPocoV3--;
+                        cantidadPocoV3.setText(Integer.toString(contadorPocoV3));
+                    }
+                case R.id.restadorPocoPreguntaV4:
+                    if (contadorPocoV4 > 0) {
+                        contadorPocoV4--;
+                        cantidadPocoV4.setText(Integer.toString(contadorPocoV4));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV5:
+                    if (contadorPocoV5 > 0) {
+                        contadorPocoV5--;
+                        cantidadPocoV5.setText(Integer.toString(contadorPocoV5));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV6:
+                    if (contadorPocoV6 > 0) {
+                        contadorPocoV6--;
+                        cantidadPocoV6.setText(Integer.toString(contadorPocoV6));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV7:
+                    if (contadorPocoV7 > 0) {
+                        contadorPocoV7--;
+                        cantidadPocoV7.setText(Integer.toString(contadorPocoV7));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV8:
+                    if (contadorPocoV8 > 0) {
+                        contadorPocoV8--;
+                        cantidadPocoV8.setText(Integer.toString(contadorPocoV8));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV9:
+                    if (contadorPocoV9 > 0) {
+                        contadorPocoV9--;
+                        cantidadPocoV9.setText(Integer.toString(contadorPocoV9));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV10:
+                    if (contadorPocoV10 > 0) {
+                        contadorPocoV10--;
+                        cantidadPocoV10.setText(Integer.toString(contadorPocoV10));
+                    }
+                    break;
+                case R.id.restadorPocoPreguntaV11:
+                    if (contadorPocoV11 > 0) {
+                        contadorPocoV11--;
+                        cantidadPocoV11.setText(Integer.toString(contadorPocoV11));
+                    }
+                    break;
+
+            /* SUMA CANTIDAD A NADA DE PREGUNTAS VEGGIES */
+                case R.id.sumadorNadaPreguntaV1:
+                    contadorNadaV1++;
+                    cantidadNadaV1.setText(Integer.toString(contadorNadaV1));
+                    break;
+                case R.id.sumadorNadaPreguntaV2:
+                    contadorNadaV2++;
+                    cantidadNadaV2.setText(Integer.toString(contadorNadaV2));
+                    break;
+                case R.id.sumadorNadaPreguntaV3:
+                    contadorNadaV3++;
+                    cantidadNadaV3.setText(Integer.toString(contadorNadaV3));
+                    break;
+                case R.id.sumadorNadaPreguntaV4:
+                    contadorNadaV4++;
+                    cantidadNadaV4.setText(Integer.toString(contadorNadaV4));
+                    break;
+                case R.id.sumadorNadaPreguntaV5:
+                    contadorNadaV5++;
+                    cantidadNadaV5.setText(Integer.toString(contadorNadaV5));
+                    break;
+                case R.id.sumadorNadaPreguntaV6:
+                    contadorNadaV6++;
+                    cantidadNadaV6.setText(Integer.toString(contadorNadaV6));
+                    break;
+                case R.id.sumadorNadaPreguntaV7:
+                    contadorNadaV7++;
+                    cantidadNadaV7.setText(Integer.toString(contadorNadaV7));
+                    break;
+                case R.id.sumadorNadaPreguntaV8:
+                    contadorNadaV8++;
+                    cantidadNadaV8.setText(Integer.toString(contadorNadaV8));
+                    break;
+                case R.id.sumadorNadaPreguntaV9:
+                    contadorNadaV9++;
+                    cantidadNadaV9.setText(Integer.toString(contadorNadaV9));
+                    break;
+                case R.id.sumadorNadaPreguntaV10:
+                    contadorNadaV10++;
+                    cantidadNadaV10.setText(Integer.toString(contadorNadaV10));
+                    break;
+                case R.id.sumadorNadaPreguntaV11:
+                    contadorNadaV11++;
+                    cantidadNadaV11.setText(Integer.toString(contadorNadaV11));
+                    break;
+
+            /* RESTA CANTIDAD A POCOS DE PREGUNTAS VEGGIES */
+                case R.id.restadorNadaPreguntaV1:
+                    if (contadorNadaV1 > 0) {
+                        contadorNadaV1--;
+                        cantidadNadaV1.setText(Integer.toString(contadorNadaV1));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV2:
+                    if (contadorNadaV2 > 0) {
+                        contadorNadaV2--;
+                        cantidadNadaV2.setText(Integer.toString(contadorNadaV2));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV3:
+                    if (contadorNadaV3 > 0) {
+                        contadorNadaV3--;
+                        cantidadNadaV3.setText(Integer.toString(contadorNadaV3));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV4:
+                    if (contadorNadaV4 > 0) {
+                        contadorNadaV4--;
+                        cantidadNadaV4.setText(Integer.toString(contadorNadaV4));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV5:
+                    if (contadorNadaV5 > 0) {
+                        contadorNadaV5--;
+                        cantidadNadaV5.setText(Integer.toString(contadorNadaV5));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV6:
+                    if (contadorNadaV6 > 0) {
+                        contadorNadaV6--;
+                        cantidadNadaV6.setText(Integer.toString(contadorNadaV6));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV7:
+                    if (contadorNadaV7 > 0) {
+                        contadorNadaV7--;
+                        cantidadNadaV7.setText(Integer.toString(contadorNadaV7));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV8:
+                    if (contadorNadaV8 > 0) {
+                        contadorNadaV8--;
+                        cantidadNadaV8.setText(Integer.toString(contadorNadaV8));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV9:
+                    if (contadorNadaV9 > 0) {
+                        contadorNadaV9--;
+                        cantidadNadaV9.setText(Integer.toString(contadorNadaV9));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV10:
+                    if (contadorNadaV10 > 0) {
+                        contadorNadaV10--;
+                        cantidadNadaV10.setText(Integer.toString(contadorNadaV10));
+                    }
+                    break;
+                case R.id.restadorNadaPreguntaV11:
+                    if (contadorNadaV11 > 0) {
+                        contadorNadaV11--;
+                        cantidadNadaV11.setText(Integer.toString(contadorNadaV11));
                     }
                     break;
             }
