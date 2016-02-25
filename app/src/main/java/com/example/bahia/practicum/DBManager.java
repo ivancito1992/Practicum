@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class DBManager {
     /* TABLA DE LOS ZUMOS */
-
     public static final String TABLE_NAME_ZUMOS = "botellas";
     public static final String CN_ID_ZUMOS = "_id";
     public static final String CN_BOTELLAS = "Tipo_Botella";
@@ -20,7 +19,6 @@ public class DBManager {
             + CN_NUMERO + " integer);";
 
     /* TABLA DE PREGUNTAS MUCHO POCO NADA*/
-
     public static final String TABLE_NAME_PREGUNTAS = "preguntas";
     public static final String CN_ID_PREGUNTAS = "_id";
     public static final String CN_PREGUNTAS = "Preguntas";
@@ -36,7 +34,6 @@ public class DBManager {
             + CN_NADA + " integer);";
 
     /* TABLA DE LOS DATOS DE LA AZAFATA */
-
     public static final String TABLE_NAME_AZAFATA = "azafata";
     public static final String CN_ID_AZAFATA = "_id";
     public static final String CN_NOMBRE = "Nombre_Azafata";
@@ -50,7 +47,6 @@ public class DBManager {
             + CN_RECOGIDA + " text);";
 
     /* TABLA DE PREGUNTAS SI O NO */
-
     public static final String TABLE_NAME_SINO = "sino";
     public static final String CN_ID_SINO = "_id";
     public static final String CN_PREGUNTAS_SINO = "Preguntas";
@@ -62,23 +58,6 @@ public class DBManager {
             + CN_PREGUNTAS_SINO + " text,"
             + CN_SI + " integer,"
             + CN_NO + " integer);";
-
-    /* TABLA ESTADISTICAS PARA VOLCADO DE DATOS */
-
-    public static final String TABLE_NAME_ESTADISTICAS = "estadisticas";
-    public static final String CN_ID_ESTADISTICAS = "_id";
-    public static final String CN_PREGUNTAS_STATS = "Preguntas";
-    public static final String CN_PORCENTAJE_MUCHO = "Mucho";
-    public static final String CN_PORCENTAJE_POCO = "Poco";
-    public static final String CN_PORCENTAJE_NADA = "Nada";
-
-    public static final String CREATE_TABLE_ESTADISTICAS = "create table " + TABLE_NAME_ESTADISTICAS + " ("
-            + CN_ID_ESTADISTICAS + " integer primary key autoincrement,"
-            + CN_PREGUNTAS_STATS + " text,"
-            + CN_PORCENTAJE_MUCHO + " float,"
-            + CN_PORCENTAJE_POCO + " float,"
-            + CN_PORCENTAJE_NADA + " float);";
-
 
     private SQLiteDatabase db;
 
@@ -134,19 +113,6 @@ public class DBManager {
 
     public void insertarDatosAzafata(String azafata, String centro, String dia) {
         db.insert(TABLE_NAME_AZAFATA, null, valuesGeneratorAzafata(azafata, centro, dia));
-    }
-
-    private ContentValues VGEstadisticas(String pregunta, float sM, float sP, float sN) {
-        ContentValues values = new ContentValues();
-        values.put(CN_PREGUNTAS_STATS, pregunta);
-        values.put(CN_PORCENTAJE_MUCHO, sM);
-        values.put(CN_PORCENTAJE_POCO, sP);
-        values.put(CN_PORCENTAJE_NADA, sN);
-        return values;
-    }
-
-    public void insertarDatosEstadisticos(String pregunta, float sM, float sP, float sN) {
-        db.insert(TABLE_NAME_ESTADISTICAS, null, VGEstadisticas(pregunta, sM, sP, sN));
     }
 }
 
