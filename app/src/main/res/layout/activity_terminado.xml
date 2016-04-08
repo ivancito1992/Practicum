@@ -8,23 +8,24 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".RecogidaDatosInteres2"
-    android:background="@drawable/textura">
+    android:background="@drawable/texturapeque">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalizar"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo_aplicacion"
-            android:layout_weight="0.15"
-            android:layout_marginTop="25dp" />
-
+            android:background="@drawable/logo_aplicacion_peque"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
     </LinearLayout>
 
     <Button
@@ -38,4 +39,5 @@
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
