@@ -17,7 +17,7 @@ public class VideoPrincipal extends Activity {
         setContentView(R.layout.video);
         presentacion = (VideoView) findViewById(R.id.videoView_video);
 
-        Uri path = Uri.parse("android.resource://com.example.bahia.practicum/"+ R.raw.zumosolintro2);
+        Uri path = Uri.parse("android.resource://com.example.bahia.practicum/"+ R.raw.zumosolintro);
         presentacion.setVideoURI(path);
         presentacion.start();
         Thread esperar = new Thread(){
