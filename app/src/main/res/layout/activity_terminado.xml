@@ -28,16 +28,17 @@
             android:layout_alignParentStart="true" />
     </LinearLayout>
 
-    <Button
-        android:layout_width="match_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnFinalizar"
         android:id="@+id/finalizar"
-        android:background="@drawable/btn_accion"
+        android:background="@drawable/finalizar"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
 </RelativeLayout>

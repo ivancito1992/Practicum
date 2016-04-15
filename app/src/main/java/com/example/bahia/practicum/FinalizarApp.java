@@ -3,7 +3,7 @@ package com.example.bahia.practicum;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 public class FinalizarApp extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +13,7 @@ public class FinalizarApp extends AppCompatActivity{
     }
 
     private void siguienteLayout() {
-        Button fin = (Button) findViewById(R.id.finalizar);
+        ImageButton fin = (ImageButton) findViewById(R.id.finalizar);
         fin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class RecogidaDatosIniciar extends AppCompatActivity {
@@ -16,7 +16,7 @@ public class RecogidaDatosIniciar extends AppCompatActivity {
     }
 
     private void siguienteLayout() {
-        Button continuar = (Button) findViewById(R.id.iniciar);
+        ImageButton continuar = (ImageButton) findViewById(R.id.iniciar);
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
