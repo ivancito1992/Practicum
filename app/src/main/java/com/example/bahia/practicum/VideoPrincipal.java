@@ -8,7 +8,7 @@ import android.widget.VideoView;
 
 public class VideoPrincipal extends Activity {
     VideoView presentacion;
-    int tiempoDeEspera = 9000;
+    int tiempoDeEspera = 9100;
     boolean activo = true;
 
     @Override
